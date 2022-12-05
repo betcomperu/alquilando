@@ -35,6 +35,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/login', 'Login::index');
 $routes->get('/inmuebles', 'Inmuebles::index');
 $routes->add('/registro', 'Inmuebles::registro');
+$routes->add('/insertar', 'Inmuebles::insertar');
 
 /*
  * --------------------------------------------------------------------
