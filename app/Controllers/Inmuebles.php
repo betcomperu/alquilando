@@ -9,6 +9,8 @@ use CodeIgniter\Files\File;
 
 class Inmuebles extends BaseController
 {
+    protected $helpers = ['form'];
+
     function __construct()
     {
         $inmueble = new InmuebleModel();
@@ -18,9 +20,11 @@ class Inmuebles extends BaseController
     }
     public function index()
     {
-
+        
         //
-        $data = ['titulo'=> "Listado de Inmuebles"];
+        $inmueble = new InmuebleModel();
+        $data = ['titulo'=> "Listado de Inmuebles",
+        'inmuebles'=>$inmueble->select('*')->findAll() ];
 
         return view('/Admin/home/inmuebles', $data);
     }
@@ -28,8 +32,10 @@ class Inmuebles extends BaseController
     public function registro()
     {
        // $inmuebles = new InmuebleModel();
+       $inmueble = new InmuebleModel();
        
-        $data = ['titulo'=> "Registro de Inmuebles"];
+        $data = ['titulo'=> "Registro de Inmuebles",
+                    ];
 
         return view('/Admin/home/registro', $data);
 
@@ -38,12 +44,12 @@ class Inmuebles extends BaseController
     {
         $inmueble = new InmuebleModel();
         $img = $this->request->getfile('foto');
-        dd($inmueble);
-        if (! $file->hasMoved()) {
+      //  dd($inmueble);
+        if (! $img->getError() === 4) {
             $imageName = 'default.png';
         }else{
-            $imageName= $file->getRandomName();
-            $file->move('uploads/',$imageName);
+            $imageName= $img->getRandomName();
+            $img->move('uploads/',$imageName);
         }
 
         $inmueble->save([
@@ -55,7 +61,7 @@ class Inmuebles extends BaseController
             'nombre_inmueble'=>$this->request->getPost('nombre_inmueble'),
             'distrito'=>$this->request->getPost('distrito')
         ]);
-        session()->setFlasdata('registrado','Se ha registrado un nuevo inmueble');
+       
         return redirect()->to(base_url().'/inmuebles');
 
     }

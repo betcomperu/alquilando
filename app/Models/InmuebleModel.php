@@ -11,15 +11,14 @@ class InmuebleModel extends Model
     protected $primaryKey       = 'id_inmueble';
 
     protected $returnType       = 'array';
-    protected $useSoftDeletes   = true;
-    protected $protectFields    = false;
+//    protected $useSoftDeletes   = true;
+//    protected $protectFields    = false;
     protected $allowedFields    = ['direccion','detalles', 'foto', 'estado', 'precio',
-                                     'nombre_inmueble','distrito'  ];
+                                     'nombre_inmueble','distrito','created_at','update_at','deleted_at' ];
 
     // Dates
     protected $useTimestamps = true;
-   
-    protected $dateFormat    = 'datetime';
+       
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
     protected $deletedField  = 'deleted_at';
@@ -28,7 +27,7 @@ class InmuebleModel extends Model
     protected $validationRules      = [];
     protected $validationMessages   = [];
     protected $skipValidation       = false;
-    protected $cleanValidationRules = true;
+  //  protected $cleanValidationRules = true;
 
 
 }

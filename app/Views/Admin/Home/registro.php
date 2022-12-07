@@ -36,7 +36,7 @@
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form id="form_validation method="post" action="<?php echo base_url();?>/insertar">
+          <form enctype="multipart/form-data" id="form_validation" method="post" action="<?php echo base_url();?>/insertar">
             <div class="card-body">
               <div class="form-group">
                 <label for="exampleInputEmail1">Dirección</label>
