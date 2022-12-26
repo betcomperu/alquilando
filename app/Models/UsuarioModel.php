@@ -7,36 +7,37 @@ use CodeIgniter\Model;
 class UsuarioModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'usuarios';
-    protected $primaryKey       = 'id';
+    protected $table            = 'usuario';
+    protected $primaryKey       = 'idusuario';
     protected $useAutoIncrement = true;
-    protected $insertID         = 0;
     protected $returnType       = 'array';
-    protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['nombre', 'correo', 'usuario','clave','rol', "foto",'condicion', 'fecha_alta','fecha_edit'];
 
     // Dates
-    protected $useTimestamps = false;
-    protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
-    protected $deletedField  = 'deleted_at';
+  /* automatic date create in database */
+  protected $createdField = "fecha_alta";
+  protected $updatedField = "fecha_edit";
 
-    // Validation
-    protected $validationRules      = [];
-    protected $validationMessages   = [];
-    protected $skipValidation       = false;
-    protected $cleanValidationRules = true;
+  protected $validationRule = [];
+  protected $validationMessages = [];
+  protected $skypValidation = false;
 
-    // Callbacks
-    protected $allowCallbacks = true;
-    protected $beforeInsert   = [];
-    protected $afterInsert    = [];
-    protected $beforeUpdate   = [];
-    protected $afterUpdate    = [];
-    protected $beforeFind     = [];
-    protected $afterFind      = [];
-    protected $beforeDelete   = [];
-    protected $afterDelete    = [];
+  
+  protected function antesInsertar(array $data){
+      $data = $this->passwordHash($data);
+      $data['data']['created_at'] = date('Y-m-d H:i:s');
+      return $data;
+    }
+  
+    protected function antesActualizar(array $data){
+      $data = $this->passwordHash($data);
+      $data['data']['updated_at'] = date('Y-m-d H:i:s');
+      return $data;
+    }
+  
+    protected function claveHash(array $data){
+      if(isset($data['data']['password']))
+        $data['data']['password'] = password_hash($data['data']['password'], PASSWORD_DEFAULT);
+      return $data;
+    }
 }

@@ -24,16 +24,20 @@
       </div><!-- /.row -->
     </div><!-- /.container-fluid -->
   </div>
+  <div class="swal" data-swal="<?= session()->get('registrado')?>"></div>
 
   <div class="card-body">
                 <div class="box-header with-border">
-                    <a href="<?php echo base_url(); ?>/registro" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Agregar Inmueble </a>
+                    <a href="<?php echo base_url(); ?>/inmuebles/registro" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Agregar Inmueble </a>
                     <a href="<?php echo base_url(); ?>/inmuebles/eliminados" class="btn btn-warning"><i class="fas fa-list-ol"></i>  Eliminados
                     </a>
                     <div class="box-tools pull-right">
                         <br>
                     </div>
                 </div>
+                <?php 
+                echo session()->getFlashdata('info');
+                ?>
 
                 <div class="margin-top">
                     <table id="tabla1" class="table table-bordered table-striped">
@@ -57,7 +61,14 @@
                                 <tr>
                                     <td><?php echo $dato['direccion']; ?></td>
                                     <td><?php echo $dato['detalles']; ?></td>
-                                    <td><img src="<?= base_url('uploads') . "/"; ?><?php echo $dato['foto']; ?>" alt="img-responsive" width="80"></td>
+                                    <td>
+
+
+<a href="<?= base_url('uploads') . "/"; ?><?php echo $dato['foto']; ?>" data-toggle="lightbox" data-title="sample 11 - white">
+<img src="<?= base_url('uploads') . "/"; ?><?php echo $dato['foto']; ?>" class="img-fluid mb-2" alt="white sample" width="80" />
+</a>
+                                      
+                                    </td>
                                     <td><?php echo $dato['estado']; ?></td>
                                     <td><?php echo $dato['precio']; ?></td>
                                     <td><?php echo $dato['nombre_inmueble']; ?></td>

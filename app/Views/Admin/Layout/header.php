@@ -23,6 +23,11 @@
   <link rel="stylesheet" href="<?php echo site_url('/plugins/overlayScrollbars/css/OverlayScrollbars.min.css');?>">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="<?php echo site_url('/plugins/daterangepicker/daterangepicker.css');?>">
+  <link rel="stylesheet" href="<?php echo site_url('/plugins/ekko-lightbox/ekko-lightbox.css');?>">
   <!-- summernote -->
   <link rel="stylesheet" href="<?php echo site_url('/plugins/summernote/summernote-bs4.min.css');?>">
+  <link rel="stylesheet" href="/dist/css/adminlte.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>/plugins/sweetalert2/sweetalert2.css">
 </head>

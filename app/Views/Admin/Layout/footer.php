@@ -5,34 +5,74 @@
     <b>Version</b> 3.2.0
   </div>
 </footer>
-<script src="<?php echo base_url(); ?>/plugins/jquery/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="<?php echo base_url(); ?>/plugins/jquery-ui/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-
+<!-- jQuery -->
+<script src="/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
-<script src="<?php echo base_url(); ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- ChartJS -->
-<script src="<?php echo base_url(); ?>/plugins/chart.js/Chart.min.js"></script>
-<!-- Sparkline -->
-<script src="<?php echo base_url(); ?>/plugins/sparklines/sparkline.js"></script>
-<!-- JQVMap -->
-<script src="<?php echo base_url(); ?>/plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="<?php echo base_url(); ?>/plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-<!-- jQuery Knob Chart -->
-<script src="<?php echo base_url(); ?>/plugins/jquery-knob/jquery.knob.min.js"></script>
-<!-- daterangepicker -->
-<script src="<?php echo base_url(); ?>/plugins/moment/moment.min.js"></script>
-<script src="<?php echo base_url(); ?>/plugins/daterangepicker/daterangepicker.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="<?php echo base_url(); ?>/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- Summernote -->
-<script src="<?php echo base_url(); ?>/plugins/summernote/summernote-bs4.min.js"></script>
-<!-- overlayScrollbars -->
-<script src="<?php echo base_url(); ?>/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- DataTables -->
+<script src="/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="/plugins/ekko-lightbox/ekko-lightbox.min.js"></script>
 <!-- AdminLTE App -->
-<script src="<?php echo base_url(); ?>/dist/js/adminlte.js"></script>
-<!-- AdminLTE for demo purposes 
-<script src="/dist/js/demo.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->-->
-<script src="<?php echo base_url(); ?>/dist/js/pages/dashboard.js"></script>
+<script src="/dist/js/adminlte.min.js"></script>
+
+
+<!-- page script -->
+<script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.flash.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
+<!-- my Sweet Alert 2 -->
+<script src="/plugins/sweetalert2/sweetalert2.all.js"></script>
+<script src="/dist/js/usuario/sweetalert2.js"></script>
+
+<script>
+var table = $('#tabla1').DataTable({
+    "dom": 'Bfrtip',
+    "buttons": [
+            'pageLength',
+            'copyHtml5',
+            'excelHtml5',
+            'csvHtml5',
+            'pdfHtml5'
+        ],
+    "lengthMenu": [
+            [ 10, 25, 50, -1 ],
+            [ '10 Resultados', '25 Resultados', '50 Resultados', 'Motrar Todos' ]
+        ],
+    "buttons": {
+        "pageLength": {
+            _: "Mostrar %d Registros"
+        }
+    },
+    "language": {
+        "decimal": "",
+        "emptyTable": "No hay información",
+        "info": "Mostrando _START_ a _END_ de _TOTAL_ Documentos",
+        "infoEmpty": "Mostrando 0 to 0 of 0 Documentos",
+        "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+        "infoPostFix": "",
+        "thousands": ",",
+        "lengthMenu": "Mostrar _MENU_ Documentos",
+        "loadingRecords": "Cargando...",
+        "processing": "Procesando...",
+        "search": "Buscar:",
+        "zeroRecords": "Sin resultados encontrados",
+        "paginate": {
+            "first": "Primero",
+            "last": "Ultimo",
+            "next": "Siguiente",
+            "previous": "Anterior"
+        }
+    }
+});
+
+</script>
+</body>
+
+</html>

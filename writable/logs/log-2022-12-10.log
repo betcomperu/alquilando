@@ -1,0 +1,8 @@
+CRITICAL - 2022-12-10 22:40:42 --> The original file is not a valid file.
+#0 C:\laragon\www\alquilando\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(54): CodeIgniter\HTTP\Files\UploadedFile->move('uploads/', '1670733642_1464...')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

@@ -1,0 +1,104 @@
+CRITICAL - 2022-12-11 17:03:46 --> Class "Config\Service" not found
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-12-11 17:04:01 --> Class "Config\Service" not found
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-12-11 17:04:06 --> Class "Config\Service" not found
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-12-11 17:46:37 --> syntax error, unexpected token ";", expecting "]"
+#0 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#1 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
+#3 C:\laragon\www\alquilando\system\Config\Factories.php(136): class_exists('Config\\Filters')
+#4 C:\laragon\www\alquilando\system\Config\Factories.php(106): CodeIgniter\Config\Factories::locateClass(Array, 'Filters')
+#5 C:\laragon\www\alquilando\system\Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#6 C:\laragon\www\alquilando\system\Config\Services.php(258): config('Filters')
+#7 C:\laragon\www\alquilando\system\Config\BaseService.php(248): CodeIgniter\Config\Services::filters(NULL, false)
+#8 C:\laragon\www\alquilando\system\Config\BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#9 C:\laragon\www\alquilando\system\Config\Services.php(255): CodeIgniter\Config\BaseService::getSharedInstance('filters', NULL)
+#10 C:\laragon\www\alquilando\system\Config\BaseService.php(248): CodeIgniter\Config\Services::filters()
+#11 C:\laragon\www\alquilando\system\CodeIgniter.php(364): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#12 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-12-11 17:50:41 --> FilterUsuario filter must have a matching alias defined.
+#0 C:\laragon\www\alquilando\system\Filters\Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('FilterUsuario')
+#1 C:\laragon\www\alquilando\system\Filters\Filters.php(243): CodeIgniter\Filters\Filters->processAliasesToClass('before')
+#2 C:\laragon\www\alquilando\system\Filters\Filters.php(163): CodeIgniter\Filters\Filters->initialize('home')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('home', 'before')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-12-11 17:50:43 --> FilterUsuario filter must have a matching alias defined.
+#0 C:\laragon\www\alquilando\system\Filters\Filters.php(493): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('FilterUsuario')
+#1 C:\laragon\www\alquilando\system\Filters\Filters.php(244): CodeIgniter\Filters\Filters->processAliasesToClass('after')
+#2 C:\laragon\www\alquilando\system\Filters\Filters.php(163): CodeIgniter\Filters\Filters->initialize('login')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(384): CodeIgniter\Filters\Filters->run('login', 'before')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-12-11 17:52:08 --> Unclosed '{' on line 13 does not match ']'
+#0 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#1 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('Config\\Filters')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('Config\\Filters')
+#3 C:\laragon\www\alquilando\system\Config\Factories.php(136): class_exists('Config\\Filters')
+#4 C:\laragon\www\alquilando\system\Config\Factories.php(106): CodeIgniter\Config\Factories::locateClass(Array, 'Filters')
+#5 C:\laragon\www\alquilando\system\Common.php(198): CodeIgniter\Config\Factories::__callStatic('config', Array)
+#6 C:\laragon\www\alquilando\system\Config\Services.php(258): config('Filters')
+#7 C:\laragon\www\alquilando\system\Config\BaseService.php(248): CodeIgniter\Config\Services::filters(NULL, false)
+#8 C:\laragon\www\alquilando\system\Config\BaseService.php(189): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#9 C:\laragon\www\alquilando\system\Config\Services.php(255): CodeIgniter\Config\BaseService::getSharedInstance('filters', NULL)
+#10 C:\laragon\www\alquilando\system\Config\BaseService.php(248): CodeIgniter\Config\Services::filters()
+#11 C:\laragon\www\alquilando\system\CodeIgniter.php(364): CodeIgniter\Config\BaseService::__callStatic('filters', Array)
+#12 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-12-11 17:52:32 --> Class "App\Filters\FilterUsuario" not found
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(427): CodeIgniter\Filters\Filters->run('/', 'after')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2022-12-11 18:32:22 --> Undefined variable $titulo
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\inmuebles.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 4)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Home/inm...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Home.php(9): view('/Admin/Home/inm...')
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-11 18:33:59 --> Undefined variable $titulo
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\inmuebles.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 4)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Home/inm...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Home.php(15): view('/Admin/Home/inm...')
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-11 18:34:09 --> Undefined variable $titulo
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\inmuebles.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 4)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Home/inm...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Home.php(15): view('/Admin/Home/inm...')
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

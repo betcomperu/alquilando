@@ -1,0 +1,115 @@
+CRITICAL - 2022-12-23 17:26:47 --> Undefined variable $error
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 39)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(46): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-23 21:24:10 --> Unmatched '}'
+#0 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#1 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(788): class_exists('\\App\\Controller...', true)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-12-23 21:24:47 --> Undefined variable $error
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 39)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(46): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-23 21:31:35 --> Invalid file: inmueble/registro.php
+#0 C:\laragon\www\alquilando\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('inmueble/regist...')
+#1 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('inmueble/regist...', Array, true)
+#2 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(64): view('inmueble/regist...', Array)
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-12-23 21:32:04 --> Invalid file: inmuebles/registro.php
+#0 C:\laragon\www\alquilando\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('inmuebles/regis...')
+#1 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('inmuebles/regis...', Array, true)
+#2 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(64): view('inmuebles/regis...', Array)
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-12-23 21:34:12 --> Invalid file: inmuebles/registro.php
+#0 C:\laragon\www\alquilando\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('inmuebles/regis...')
+#1 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('inmuebles/regis...', Array, true)
+#2 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(64): view('inmuebles/regis...', Array)
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-12-23 21:35:45 --> Invalid file: Admin/Home/inmuebles/registro.php
+#0 C:\laragon\www\alquilando\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Admin/Home/inmu...')
+#1 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('Admin/Home/inmu...', Array, true)
+#2 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(64): view('Admin/Home/inmu...', Array)
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-12-23 21:36:58 --> Undefined variable $titulo
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 4)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('Admin/Home/regi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(64): view('Admin/Home/regi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-23 21:38:07 --> Undefined variable $titulo
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 4)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('Admin/Home/regi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(64): view('Admin/Home/regi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-23 22:08:25 --> Call to a member function getError() on null
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-12-23 22:08:55 --> Call to a member function getErrors() on null
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-12-23 22:08:59 --> Call to a member function getErrors() on null
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-12-23 22:33:33 --> El archivo original no es un archivo válido.
+#0 C:\laragon\www\alquilando\system\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+#1 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(74): CodeIgniter\HTTP\Files\UploadedFile->move('uploads/', '1671856413_e7f2...')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

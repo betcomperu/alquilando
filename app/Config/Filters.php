@@ -23,7 +23,10 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+        'FilterAdmin' => \App\Filters\FilterAdmin::class,  // Se agrega el filtro creado 
+  
     ];
+  
 
     /**
      * List of filter aliases that are always
@@ -36,13 +39,22 @@ class Filters extends BaseConfig
             // 'honeypot',
             // 'csrf',
             // 'invalidchars',
+            'FilterAdmin' => [
+                'except' => ['login/*', 'login', '/']
+            ],
+   
         ],
         'after' => [
-            'toolbar',
+
             // 'honeypot',
             // 'secureheaders',
+            'FilterAdmin' => [
+                'except' => ['Home/*', 'Home', '/','inmuebles/*','inmuebles']
+            ]
         ],
+        'toolbar',
     ];
+    
 
     /**
      * List of filter aliases that works on a

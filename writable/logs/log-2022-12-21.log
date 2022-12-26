@@ -1,0 +1,188 @@
+CRITICAL - 2022-12-21 15:37:49 --> Too few arguments to function CodeIgniter\HTTP\RedirectResponse::with(), 1 passed in C:\laragon\www\alquilando\app\Controllers\Inmuebles.php on line 57 and exactly 2 expected
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(57): CodeIgniter\HTTP\RedirectResponse->with('errors_model')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-21 15:43:06 --> Call to a member function getErrors() on null
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-12-21 15:48:18 --> Call to a member function getErrors() on null
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-12-21 15:51:04 --> Undefined variable $error
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 60)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(46): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 15:51:19 --> Undefined variable $error
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 60)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(46): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 15:51:21 --> Undefined variable $error
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 60)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(46): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 15:51:27 --> Undefined variable $error
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 60)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(46): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 15:52:15 --> Undefined variable $errores
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 60)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(46): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 15:52:19 --> Undefined variable $errores
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 60)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(46): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 16:04:54 --> Undefined variable $session
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 60)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(46): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 16:05:32 --> Undefined variable $session
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 60)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(46): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 16:05:49 --> Undefined variable $session
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 60)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(46): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 16:06:13 --> Undefined variable $error
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 60)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(46): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 16:06:14 --> Undefined variable $error
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 60)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(46): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 16:06:47 --> Undefined variable $session
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 60)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(46): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 16:06:48 --> Undefined variable $session
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 60)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(46): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-12-21 22:29:29 --> Attempt to read property "errno" on bool
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(555): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\laragon\\www\\...', 555)
+#1 C:\laragon\www\alquilando\system\Model.php(411): CodeIgniter\Database\MySQLi\Connection->error()
+#2 C:\laragon\www\alquilando\system\BaseModel.php(1059): CodeIgniter\Model->doErrors()
+#3 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(56): CodeIgniter\BaseModel->errors()
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-12-21 22:33:09 --> Call to undefined method App\Models\InmuebleModel::withRequest
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(55): CodeIgniter\Model->__call('withRequest', Array)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-21 22:53:24 --> syntax error, unexpected single-quoted string "estado", expecting variable
+#0 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#1 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Inmu...')
+#2 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(17): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Inmu...')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(800): App\Controllers\Inmuebles->__construct()
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

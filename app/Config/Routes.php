@@ -21,7 +21,7 @@ $routes->setDefaultController('Login');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
-$routes->setAutoRoute(false);
+$routes->setAutoRoute(true);
 
 /*
  * --------------------------------------------------------------------
@@ -33,9 +33,16 @@ $routes->setAutoRoute(false);
 // route since we don't have to scan directories.
 $routes->get('/', 'Login::index');
 $routes->get('/login', 'Login::index');
-$routes->get('/inmuebles', 'Inmuebles::index');
-$routes->add('/registro', 'Inmuebles::registro');
-$routes->add('/insertar', 'Inmuebles::insertar');
+$routes->get('/inmuebles', 'inmuebles::index');
+$routes->get('inmuebles/registro', 'inmuebles::registro');
+$routes->get('inmuebles/listar', 'inmuebles::listar');
+$routes->post('inmuebles/insertar', 'inmuebles::insertar');
+$routes->get('/home', 'home::index');
+$routes->get('/salir', 'Login::salir');
+$routes->get('/login/entrar', 'Login::entrar');
+
+
+
 
 /*
  * --------------------------------------------------------------------

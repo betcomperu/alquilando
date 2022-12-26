@@ -32,8 +32,6 @@ class Usuarios extends Migration
                 'type'=> 'VARCHAR',
                 'null'=>'false',
                 'constraint'=> '100',
-                
-
             ],
             'es_admin'=> [
                 'type'=> 'BOOLEAN',
