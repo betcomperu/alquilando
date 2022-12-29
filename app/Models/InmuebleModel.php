@@ -13,7 +13,7 @@ class InmuebleModel extends Model
     protected $returnType = 'array';
 //    protected $useSoftDeletes   = true;
 //    protected $protectFields    = false;
-    protected $allowedFields = ['direccion','detalles', 'foto', 'estado', 'precio',
+    protected $allowedFields = ['direccion','detalles', 'foto', 'estado', 'precio','condicion',
                                      'nombre_inmueble','distrito','created_at','update_at','deleted_at' ];
 
     // Dates
@@ -24,4 +24,13 @@ class InmuebleModel extends Model
     protected $deletedField  = 'deleted_at';
 
   
+
+    protected function numeroInmuebles()
+    {
+        $db = db_connect('alquilando');
+        $builder = $db->table('inmuebles');
+        $numeroinmuebles = $builder->select('*')->where('condicion', 1)->countAll();
+        echo $numeroinmuebles;
+
+    }
 }

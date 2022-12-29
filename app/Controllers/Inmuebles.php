@@ -18,20 +18,20 @@ class Inmuebles extends BaseController
         $this->session = \Config\Services::session();
         helper(['url', 'form']);
     }
-    public function index()
+    public function index($condicion = 1)
     {
         //
         $inmueble = new InmuebleModel();
         $data = ['titulo'=> "Listado de Inmuebles",
-        'inmuebles'=>$inmueble->select('*')->findAll() ];
+                'inmuebles'=>$inmueble->select('*')->where('condicion',$condicion)->findAll()];
         return view('/Admin/home/index', $data);
     }
-    public function listar()
+    public function listar($condicion=1)
     {
         //
         $inmueble = new InmuebleModel();
-        $data = ['titulo'=> "Listado de Inmuebles Registrados",
-        'inmuebles'=>$inmueble->select('*')->findAll() ];
+        $data = ['titulo'=> "Listado de Inmuebles  Registrados",
+        'inmuebles'=>$inmueble->select('*')->where('condicion',$condicion)->findAll()];
         return view('/Admin/home/inmuebles', $data);
     }
 
@@ -86,6 +86,25 @@ class Inmuebles extends BaseController
            $this->session->setflashdata('registrado', "A registrado un Inmueble correctamente");
         //   dd($set);;
             return redirect()->to(base_url().'/inmuebles/listar');
+        }
+
+        public function eliminar($id)
+        {
+            $inmueble = new InmuebleModel();
+            $data=[
+                'condicion'=>0
+            ];
+            $inmueble->update($id,$data);
+            return redirect()->to(base_url().'/inmuebles/listar');
+        }
+        public function eliminados($condicion=0)
+        {
+            
+                $inmueble = new InmuebleModel();
+                $data = ['titulo'=> "Listado de Inmuebles  Registrados",
+                'inmuebles'=>$inmueble->select('*')->where('condicion',$condicion)->findAll()];
+                return view('/Admin/home/inmuebles', $data);
+            
         }
 
         
