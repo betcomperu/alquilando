@@ -37,9 +37,11 @@ $routes->get('/inmuebles', 'inmuebles::index');
 $routes->get('inmuebles/registro', 'inmuebles::registro');
 $routes->get('inmuebles/listar', 'inmuebles::listar');
 $routes->post('inmuebles/insertar', 'inmuebles::insertar');
+
 $routes->get('/home', 'home::index');
 $routes->get('/salir', 'Login::salir');
 $routes->get('/login/entrar', 'Login::entrar');
+$routes->get('/usuarios/listar', 'usuarios::listar');
 
 
 

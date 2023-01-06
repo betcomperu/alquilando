@@ -1,0 +1,14 @@
+CRITICAL - 2022-12-30 11:15:21 --> Undefined array key "foto"
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 128)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->update()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-30 11:28:37 --> Undefined variable $data
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(148): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 148)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->update('23')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
