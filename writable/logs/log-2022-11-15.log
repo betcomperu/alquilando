@@ -1,0 +1,9 @@
+CRITICAL - 2022-11-15 10:04:42 --> Invalid file: admin/login.php
+#0 C:\laragon\www\alquilando\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/login.php')
+#1 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('admin/login', Array, true)
+#2 C:\laragon\www\alquilando\app\Controllers\Login.php(14): view('admin/login', Array)
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Login->index()
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

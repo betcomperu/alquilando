@@ -1,0 +1,56 @@
+CRITICAL - 2022-12-17 15:57:23 --> Undefined array key "InmuebleModel"
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 55)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-17 16:09:46 --> Undefined variable $validationRules
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 56)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-17 16:10:26 --> Call to undefined method App\Models\InmuebleModel::getErrors
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(56): CodeIgniter\Model->__call('getErrors', Array)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-17 16:17:19 --> Undefined property: App\Controllers\Inmuebles::$usuarioModel
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\laragon\\www\\...', 57)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-17 16:17:54 --> Undefined property: App\Controllers\Inmuebles::$InmuebleModel
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\laragon\\www\\...', 57)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-17 16:18:34 --> Undefined property: App\Controllers\Inmuebles::$Inmueble
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\laragon\\www\\...', 57)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-17 16:19:12 --> Undefined property: App\Controllers\Inmuebles::$inmueble
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\laragon\\www\\...', 57)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-12-17 16:20:22 --> Too few arguments to function CodeIgniter\HTTP\RedirectResponse::with(), 1 passed in C:\laragon\www\alquilando\app\Controllers\Inmuebles.php on line 57 and exactly 2 expected
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(57): CodeIgniter\HTTP\RedirectResponse->with('errors_model')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

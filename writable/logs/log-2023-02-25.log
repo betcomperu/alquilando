@@ -1,0 +1,560 @@
+CRITICAL - 2023-02-25 11:33:23 --> Undefined variable $data
+#0 C:\laragon\www\alquilando\app\Views\Admin\Layout\aside.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 17)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\View\View.php(424): CodeIgniter\View\View->render('Admin/Layout/as...', NULL, true)
+#4 C:\laragon\www\alquilando\app\Views\Admin\Layout\main.php(5): CodeIgniter\View\View->include('Admin/Layout/as...')
+#5 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\alquilando\system\View\View.php(226): CodeIgniter\View\View->render('Admin/Layout/ma...', Array, true)
+#8 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Home/ind...', Array, true)
+#9 C:\laragon\www\alquilando\app\Controllers\Home.php(16): view('/Admin/Home/ind...', Array)
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#11 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-25 11:33:59 --> Undefined variable $data
+#0 C:\laragon\www\alquilando\app\Views\Admin\Layout\aside.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 17)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\View\View.php(424): CodeIgniter\View\View->render('Admin/Layout/as...', NULL, true)
+#4 C:\laragon\www\alquilando\app\Views\Admin\Layout\main.php(5): CodeIgniter\View\View->include('Admin/Layout/as...')
+#5 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\alquilando\system\View\View.php(226): CodeIgniter\View\View->render('Admin/Layout/ma...', Array, true)
+#8 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Home/ind...', Array, true)
+#9 C:\laragon\www\alquilando\app\Controllers\Home.php(16): view('/Admin/Home/ind...', Array)
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#11 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-25 11:34:32 --> Undefined variable $data
+#0 C:\laragon\www\alquilando\app\Views\Admin\Layout\aside.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 17)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\View\View.php(424): CodeIgniter\View\View->render('Admin/Layout/as...', NULL, true)
+#4 C:\laragon\www\alquilando\app\Views\Admin\Layout\main.php(5): CodeIgniter\View\View->include('Admin/Layout/as...')
+#5 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\alquilando\system\View\View.php(226): CodeIgniter\View\View->render('Admin/Layout/ma...', Array, true)
+#8 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Home/ind...', Array, true)
+#9 C:\laragon\www\alquilando\app\Controllers\Home.php(16): view('/Admin/Home/ind...', Array)
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#11 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-25 11:34:34 --> Undefined variable $data
+#0 C:\laragon\www\alquilando\app\Views\Admin\Layout\aside.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 17)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\View\View.php(424): CodeIgniter\View\View->render('Admin/Layout/as...', NULL, true)
+#4 C:\laragon\www\alquilando\app\Views\Admin\Layout\main.php(5): CodeIgniter\View\View->include('Admin/Layout/as...')
+#5 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\alquilando\system\View\View.php(226): CodeIgniter\View\View->render('Admin/Layout/ma...', Array, true)
+#8 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#9 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(44): view('/Admin/usuario/...', Array)
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#11 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#12 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-25 11:34:36 --> Undefined variable $data
+#0 C:\laragon\www\alquilando\app\Views\Admin\Layout\aside.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 17)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\View\View.php(424): CodeIgniter\View\View->render('Admin/Layout/as...', NULL, true)
+#4 C:\laragon\www\alquilando\app\Views\Admin\Layout\main.php(5): CodeIgniter\View\View->include('Admin/Layout/as...')
+#5 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\alquilando\system\View\View.php(226): CodeIgniter\View\View->render('Admin/Layout/ma...', Array, true)
+#8 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#9 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(177): view('/Admin/usuario/...', Array)
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->edit('1')
+#11 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#12 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-25 11:34:37 --> Undefined variable $data
+#0 C:\laragon\www\alquilando\app\Views\Admin\Layout\aside.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 17)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\View\View.php(424): CodeIgniter\View\View->render('Admin/Layout/as...', NULL, true)
+#4 C:\laragon\www\alquilando\app\Views\Admin\Layout\main.php(5): CodeIgniter\View\View->include('Admin/Layout/as...')
+#5 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\alquilando\system\View\View.php(226): CodeIgniter\View\View->render('Admin/Layout/ma...', Array, true)
+#8 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#9 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(61): view('/Admin/usuario/...', Array)
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->listar()
+#11 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#12 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-25 11:34:38 --> Undefined variable $data
+#0 C:\laragon\www\alquilando\app\Views\Admin\Layout\aside.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 17)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\View\View.php(424): CodeIgniter\View\View->render('Admin/Layout/as...', NULL, true)
+#4 C:\laragon\www\alquilando\app\Views\Admin\Layout\main.php(5): CodeIgniter\View\View->include('Admin/Layout/as...')
+#5 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\alquilando\system\View\View.php(226): CodeIgniter\View\View->render('Admin/Layout/ma...', Array, true)
+#8 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Home/ind...', Array, true)
+#9 C:\laragon\www\alquilando\app\Controllers\Home.php(16): view('/Admin/Home/ind...', Array)
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#11 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-25 11:38:18 --> Undefined variable $data
+#0 C:\laragon\www\alquilando\app\Views\Admin\Layout\aside.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 17)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\View\View.php(424): CodeIgniter\View\View->render('Admin/Layout/as...', NULL, true)
+#4 C:\laragon\www\alquilando\app\Views\Admin\Layout\main.php(5): CodeIgniter\View\View->include('Admin/Layout/as...')
+#5 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\alquilando\system\View\View.php(226): CodeIgniter\View\View->render('Admin/Layout/ma...', Array, true)
+#8 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Home/ind...', Array, true)
+#9 C:\laragon\www\alquilando\app\Controllers\Home.php(16): view('/Admin/Home/ind...', Array)
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#11 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-25 11:39:32 --> Undefined variable $session
+#0 C:\laragon\www\alquilando\app\Views\Admin\Layout\aside.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 17)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\View\View.php(424): CodeIgniter\View\View->render('Admin/Layout/as...', NULL, true)
+#4 C:\laragon\www\alquilando\app\Views\Admin\Layout\main.php(5): CodeIgniter\View\View->include('Admin/Layout/as...')
+#5 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#6 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 C:\laragon\www\alquilando\system\View\View.php(226): CodeIgniter\View\View->render('Admin/Layout/ma...', Array, true)
+#8 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Home/ind...', Array, true)
+#9 C:\laragon\www\alquilando\app\Controllers\Home.php(16): view('/Admin/Home/ind...', Array)
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#11 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#12 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-25 11:40:32 --> Class "App\libraries\Hash" not found
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->update('2')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-02-25 12:52:35 --> syntax error, unexpected token "*"
+#0 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#1 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(788): class_exists('\\App\\Controller...', true)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-02-25 13:05:04 --> Undefined variable $idusuario
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 43)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 13:16:11 --> Too few arguments to function App\Models\InmuebleModel::obtener_inmuebles_por_usuario(), 1 passed in C:\laragon\www\alquilando\app\Controllers\Inmuebles.php on line 43 and exactly 2 expected
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(43): App\Models\InmuebleModel->obtener_inmuebles_por_usuario('2')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 13:16:41 --> Too few arguments to function App\Models\InmuebleModel::obtener_inmuebles_por_usuario(), 1 passed in C:\laragon\www\alquilando\app\Controllers\Inmuebles.php on line 43 and exactly 2 expected
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(43): App\Models\InmuebleModel->obtener_inmuebles_por_usuario('2')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 13:20:03 --> Too few arguments to function App\Models\InmuebleModel::obtener_inmuebles_por_usuario(), 1 passed in C:\laragon\www\alquilando\app\Controllers\Inmuebles.php on line 43 and exactly 2 expected
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(43): App\Models\InmuebleModel->obtener_inmuebles_por_usuario('2')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 13:22:39 --> Call to undefined function App\Controllers\select()
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-02-25 13:36:03 --> Too few arguments to function App\Controllers\Inmuebles::listar(), 0 passed in C:\laragon\www\alquilando\system\CodeIgniter.php on line 823 and exactly 2 expected
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-02-25 13:37:40 --> Too few arguments to function App\Controllers\Inmuebles::listar(), 0 passed in C:\laragon\www\alquilando\system\CodeIgniter.php on line 823 and exactly 2 expected
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2023-02-25 13:38:19 --> Unknown column 'idusuario' in 'where clause'
+CRITICAL - 2023-02-25 13:38:19 --> Unknown column 'idusuario' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Models\InmuebleModel.php(40): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(43): App\Models\InmuebleModel->obtener_inmuebles_por_usuario(2)
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-02-25 13:38:34 --> Unknown column 'idusuario' in 'where clause'
+CRITICAL - 2023-02-25 13:38:34 --> Unknown column 'idusuario' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Models\InmuebleModel.php(40): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(43): App\Models\InmuebleModel->obtener_inmuebles_por_usuario(2)
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-25 13:38:44 --> Too few arguments to function App\Controllers\Inmuebles::listar(), 0 passed in C:\laragon\www\alquilando\system\CodeIgniter.php on line 823 and exactly 2 expected
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-02-25 13:38:57 --> Undefined variable $inmo_usuario
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 42)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 13:39:39 --> Too few arguments to function App\Controllers\Inmuebles::listar(), 0 passed in C:\laragon\www\alquilando\system\CodeIgniter.php on line 823 and exactly 1 expected
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-02-25 13:40:42 --> Too few arguments to function App\Controllers\Inmuebles::listar(), 0 passed in C:\laragon\www\alquilando\system\CodeIgniter.php on line 823 and exactly 1 expected
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2023-02-25 13:40:55 --> Unknown column 'idusuario' in 'where clause'
+CRITICAL - 2023-02-25 13:40:55 --> Unknown column 'idusuario' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Models\InmuebleModel.php(40): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(43): App\Models\InmuebleModel->obtener_inmuebles_por_usuario(2)
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-25 13:42:03 --> Undefined array key "inmo_usuario"
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 40)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 13:43:15 --> Undefined array key "inmo_usuario"
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 40)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 13:43:15 --> Undefined array key "inmo_usuario"
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 40)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 13:44:09 --> Undefined array key "inmo_usuario"
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 40)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 13:46:00 --> Undefined array key "inmo_usuario"
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 41)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 13:46:02 --> Undefined array key "inmo_usuario"
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 41)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 13:46:22 --> Undefined array key "inmo_usuario"
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 41)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-02-25 13:48:08 --> Unknown column 'idusuario' in 'where clause'
+CRITICAL - 2023-02-25 13:48:08 --> Unknown column 'idusuario' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Models\InmuebleModel.php(40): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(43): App\Models\InmuebleModel->obtener_inmuebles_por_usuario(1)
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-25 13:48:17 --> Undefined array key "inmo_usuario"
+#0 C:\laragon\www\alquilando\app\Controllers\Login.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 85)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Login->entrar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 21:52:11 --> syntax error, unexpected token ";"
+#0 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#2 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(57): view('/Admin/home/reg...', Array)
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-02-25 21:54:47 --> Unknown column 'inmo_usuario' in 'where clause'
+CRITICAL - 2023-02-25 21:54:47 --> Unknown column 'inmo_usuario' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Models\InmuebleModel.php(40): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(43): App\Models\InmuebleModel->obtener_inmuebles_por_usuario(1)
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-02-25 21:55:33 --> Unknown column 'inmo_usuario' in 'where clause'
+CRITICAL - 2023-02-25 21:55:33 --> Unknown column 'inmo_usuario' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Models\InmuebleModel.php(40): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(43): App\Models\InmuebleModel->obtener_inmuebles_por_usuario(1)
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-25 22:08:44 --> syntax error, unexpected token "]", expecting identifier or variable or "{" or "$"
+#0 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#1 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(788): class_exists('\\App\\Controller...', true)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-02-25 22:09:16 --> Too few arguments to function App\Controllers\Inmuebles::insertar(), 0 passed in C:\laragon\www\alquilando\system\CodeIgniter.php on line 823 and exactly 1 expected
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-02-25 22:09:55 --> Undefined variable $id_usuario
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 90)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-02-25 22:10:58 --> Unknown column 'inmo_usuario' in 'where clause'
+CRITICAL - 2023-02-25 22:10:58 --> Unknown column 'inmo_usuario' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Models\InmuebleModel.php(40): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(43): App\Models\InmuebleModel->obtener_inmuebles_por_usuario(1)
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-02-25 22:11:41 --> Unknown column 'inmo_usuario' in 'where clause'
+CRITICAL - 2023-02-25 22:11:41 --> Unknown column 'inmo_usuario' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Models\InmuebleModel.php(40): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(43): App\Models\InmuebleModel->obtener_inmuebles_por_usuario(1)
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-02-25 22:12:23 --> Unknown column 'inmo_usuario' in 'where clause'
+CRITICAL - 2023-02-25 22:12:23 --> Unknown column 'inmo_usuario' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Models\InmuebleModel.php(40): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(43): App\Models\InmuebleModel->obtener_inmuebles_por_usuario(1)
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-02-25 22:12:25 --> Unknown column 'inmo_usuario' in 'where clause'
+CRITICAL - 2023-02-25 22:12:25 --> Unknown column 'inmo_usuario' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Models\InmuebleModel.php(40): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(43): App\Models\InmuebleModel->obtener_inmuebles_por_usuario(1)
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-02-25 22:12:53 --> Unknown column 'inmo_usuario' in 'where clause'
+CRITICAL - 2023-02-25 22:12:53 --> Unknown column 'inmo_usuario' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Models\InmuebleModel.php(40): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(43): App\Models\InmuebleModel->obtener_inmuebles_por_usuario(1)
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-02-25 22:24:07 --> Call to undefined method App\Models\UsuarioModel::usuario
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(41): CodeIgniter\Model->__call('usuario', Array)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 22:24:36 --> Call to undefined method App\Models\UsuarioModel::usuario
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(41): CodeIgniter\Model->__call('usuario', Array)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 22:24:39 --> Call to undefined method App\Models\UsuarioModel::usuario
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(41): CodeIgniter\Model->__call('usuario', Array)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 22:25:06 --> Call to undefined method App\Models\UsuarioModel::usuario
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(41): CodeIgniter\Model->__call('usuario', Array)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 22:25:07 --> Call to undefined method App\Models\UsuarioModel::usuario
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(41): CodeIgniter\Model->__call('usuario', Array)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-02-25 22:25:48 --> Call to undefined method App\Models\InmuebleModel::belongsTo
+#0 C:\laragon\www\alquilando\app\Models\InmuebleModel.php(45): CodeIgniter\Model->__call('belongsTo', Array)
+#1 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(41): App\Models\InmuebleModel->usuario()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-02-25 22:25:49 --> Call to undefined method App\Models\InmuebleModel::belongsTo
+#0 C:\laragon\www\alquilando\app\Models\InmuebleModel.php(45): CodeIgniter\Model->__call('belongsTo', Array)
+#1 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(41): App\Models\InmuebleModel->usuario()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-02-25 22:28:25 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\laragon\\www\\...', 312)
+#1 C:\laragon\www\alquilando\system\Database\Query.php(312): implode(',', Array)
+#2 C:\laragon\www\alquilando\system\Database\Query.php(293): CodeIgniter\Database\Query->matchNamedBinds('SELECT *\nFROM `...', Array)
+#3 C:\laragon\www\alquilando\system\Database\Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#4 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#5 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#6 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#7 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#8 C:\laragon\www\alquilando\app\Models\InmuebleModel.php(40): CodeIgniter\BaseModel->findAll()
+#9 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(44): App\Models\InmuebleModel->obtener_inmuebles_por_usuario(Array)
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->listar()
+#11 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#12 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2023-02-25 22:38:37 --> Undefined array key "idusurio"
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\registro.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 43)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/reg...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(60): view('/Admin/home/reg...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->registro()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

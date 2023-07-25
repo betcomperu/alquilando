@@ -1,0 +1,59 @@
+CRITICAL - 2022-11-24 21:17:07 --> Call to a member function getError() on null
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-24 21:20:45 --> Call to a member function getError() on null
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-24 21:33:12 --> Undefined variable $img
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 40)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-24 21:33:47 --> Call to a member function hasMoved() on null
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-24 21:47:06 --> Call to a member function hasMoved() on null
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->insertar()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-11-24 21:52:30 --> Too few arguments to function CodeIgniter\Files\File::__construct(), 0 passed in C:\laragon\www\alquilando\app\Controllers\Inmuebles.php on line 16 and at least 1 expected
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(16): CodeIgniter\Files\File->__construct()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(800): App\Controllers\Inmuebles->__construct()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-24 21:53:10 --> Too few arguments to function CodeIgniter\Files\File::__construct(), 0 passed in C:\laragon\www\alquilando\app\Controllers\Inmuebles.php on line 16 and at least 1 expected
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(16): CodeIgniter\Files\File->__construct()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(800): App\Controllers\Inmuebles->__construct()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-24 21:53:13 --> Too few arguments to function CodeIgniter\Files\File::__construct(), 0 passed in C:\laragon\www\alquilando\app\Controllers\Inmuebles.php on line 16 and at least 1 expected
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(16): CodeIgniter\Files\File->__construct()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(800): App\Controllers\Inmuebles->__construct()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-24 21:53:19 --> Too few arguments to function CodeIgniter\Files\File::__construct(), 0 passed in C:\laragon\www\alquilando\app\Controllers\Inmuebles.php on line 16 and at least 1 expected
+#0 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(16): CodeIgniter\Files\File->__construct()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(800): App\Controllers\Inmuebles->__construct()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

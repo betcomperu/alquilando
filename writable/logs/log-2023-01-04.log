@@ -1,0 +1,241 @@
+CRITICAL - 2023-01-04 14:06:02 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\editar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\laragon\\www\\...', 41)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(118): view('/Admin/home/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->edit('pages', 'layout', 'top-nav.html')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-04 14:14:05 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\editar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\laragon\\www\\...', 41)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(118): view('/Admin/home/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->edit('pages', 'layout', 'top-nav.html')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-04 15:11:09 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\editar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\laragon\\www\\...', 41)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(118): view('/Admin/home/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->edit('pages', 'layout', 'top-nav.html')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-04 15:11:46 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\editar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\laragon\\www\\...', 41)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(118): view('/Admin/home/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->edit('pages', 'layout', 'top-nav.html')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-04 15:13:15 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\editar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\laragon\\www\\...', 41)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/home/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Inmuebles.php(118): view('/Admin/home/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Inmuebles->edit('pages', 'layout', 'top-nav.html')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inmuebles))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-04 15:15:07 --> Class "App\Models\RolesModel" not found
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(800): App\Controllers\Usuarios->__construct()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-04 15:20:27 --> Archivo inválido: plantillas/header.php
+#0 C:\laragon\www\alquilando\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('plantillas/head...')
+#1 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('plantillas/head...', Array, true)
+#2 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(45): view('plantillas/head...')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-04 15:35:17 --> syntax error, unexpected token "[", expecting identifier or variable or "{" or "$"
+#0 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#2 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(46): view('/Admin/Usuario/...', Array)
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-04 15:35:55 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\alquilando\system\View\View.php(210): include()
+#1 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#3 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(46): view('/Admin/Usuario/...', Array)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-04 15:37:53 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\alquilando\system\View\View.php(210): include()
+#1 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#3 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(46): view('/Admin/Usuario/...', Array)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-04 15:46:31 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\alquilando\system\View\View.php(210): include()
+#1 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#3 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(43): view('/Admin/usuario/...', Array)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-04 15:46:33 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\alquilando\system\View\View.php(210): include()
+#1 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#3 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(43): view('/Admin/usuario/...', Array)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-04 15:52:31 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\alquilando\system\View\View.php(210): include()
+#1 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#3 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(43): view('/Admin/usuario/...', Array)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-04 17:46:06 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\alquilando\system\View\View.php(210): include()
+#1 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#3 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(43): view('/Admin/usuario/...', Array)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-04 18:10:12 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\alquilando\system\View\View.php(210): include()
+#1 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#3 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(43): view('/Admin/usuario/...', Array)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-04 18:10:36 --> syntax error, unexpected token "(", expecting identifier or variable or "{" or "$"
+#0 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#2 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(43): view('/Admin/usuario/...', Array)
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-01-04 18:11:22 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\alquilando\system\View\View.php(210): include()
+#1 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#3 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(43): view('/Admin/usuario/...', Array)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-04 18:11:57 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\alquilando\system\View\View.php(210): include()
+#1 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#3 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(43): view('/Admin/usuario/...', Array)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-04 18:12:16 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\alquilando\system\View\View.php(210): include()
+#1 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#3 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(43): view('/Admin/usuario/...', Array)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-04 18:19:39 --> Cannot use object of type stdClass as array
+#0 C:\laragon\www\alquilando\system\View\View.php(210): include()
+#1 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#3 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(43): view('/Admin/usuario/...', Array)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-01-04 18:22:50 --> Attempt to read property "nombrerol" on array
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\listar.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\laragon\\www\\...', 65)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(43): view('/Admin/usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-04 18:23:55 --> Attempt to read property "foto" on array
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\listar.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\laragon\\www\\...', 84)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(43): view('/Admin/usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-04 21:16:14 --> Class "App\Controllers\RolesModel" not found
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->edit('1')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-04 21:16:55 --> Class "App\Controllers\RolesModel" not found
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->edit('1')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-01-04 21:17:17 --> Archivo inválido: plantillas/header.php
+#0 C:\laragon\www\alquilando\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('plantillas/head...')
+#1 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('plantillas/head...', Array, true)
+#2 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(177): view('plantillas/head...')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->edit('1')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
