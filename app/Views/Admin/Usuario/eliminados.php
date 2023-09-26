@@ -87,24 +87,19 @@
                                     <td><?php echo $dato['correo']; ?></td>
                                     <td><?php echo $dato['usuario']; ?></td>
                                     <td>
-                                        <?php
-                                        $valrol = $dato['rol'];
-                                        switch ($valrol) {
-                                            case 'Administrador':
-                                                //  echo '<p class="text-green">'.$valrol.'</p>';
-                                                echo '<p class="text-success"><b>' . $valrol . '</b></p>';
-                                                break;
-                                            case 'Vendedor':
-                                                echo '<p class="text-info"><b>' . $valrol . '</b></p>';
-                                                break;
-                                            case 'Supervisor':
-                                                echo '<p class="text-primary"><b>' . $valrol . '</b></p>';
-                                                break;
-                                            default:
-                                                echo '<p class="text-danger"><b>' . $valrol . '</b></p>';
-                                                break;
-                                        }
-                                        ?>
+                                    <?php
+                $valrol = $dato['rol'];
+                switch ($valrol) {
+                  case '1':
+                    //  echo '<p class="text-green">'.$valrol.'</p>';
+                    echo '<p class="text-success"><b>' . "Administrador" . '</b></p>';
+                    break;
+          
+                  default:
+                    echo '<p class="text-danger"><b>' ."Inquilino" . '</b></p>';
+                    break;
+                }
+                ?>
 
 
                                     </td>

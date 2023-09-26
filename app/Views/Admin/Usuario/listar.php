@@ -25,6 +25,11 @@
     </div><!-- /.container-fluid -->
   </div>
   <div class="swal" data-swal="<?= session()->get('registrado') ?>"></div>
+  <?php if (session()->getFlashdata('error')): ?>
+    <div class="alert alert-danger">
+        <?= session()->getFlashdata('error') ?>
+    </div>
+<?php endif; ?>
 
   <div class="card-body">
     <div class="box-header with-border">
@@ -57,23 +62,22 @@
 
           <?php foreach ($usuarios as $dato) : ?>
             <tr>
-              <td><?php echo $dato['nombre']; ?></td>
+            <td>
+    <a href="<?= base_url('Usuarios/perfil/' . $dato['idusuario']) ?>">
+        <?php echo $dato['nombre']; ?>
+    </a>
+</td> 
               <td><?php echo $dato['correo']; ?></td>
               <td><?php echo $dato['usuario']; ?></td>
               <td>
                 <?php
-                $valrol = $dato['nombrerol'];
+                $valrol = $dato['nombre_rol'];
                 switch ($valrol) {
                   case 'Administrador':
                     //  echo '<p class="text-green">'.$valrol.'</p>';
                     echo '<p class="text-success"><b>' . $valrol . '</b></p>';
                     break;
-                  case 'Vendedor':
-                    echo '<p class="text-info"><b>' . $valrol . '</b></p>';
-                    break;
-                  case 'Supervisor':
-                    echo '<p class="text-primary"><b>' . $valrol . '</b></p>';
-                    break;
+          
                   default:
                     echo '<p class="text-danger"><b>' . $valrol . '</b></p>';
                     break;
@@ -128,6 +132,7 @@
       <!-- /.row (main row) -->
     </div><!-- /.container-fluid -->
   </section>
+
   <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->

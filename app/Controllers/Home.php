@@ -1,53 +1,64 @@
 <?php
 
 namespace App\Controllers;
+
 use App\Models\InmuebleModel;
+use App\Models\UsuarioModel;
+use App\Models\RolModel;
 use Config\Services\session;
 use CodeIgniter\Files\File;
 
 
 class Home extends BaseController
 {
-    public function index($condicion=1, $idusuario=null)
-    {
-        $inmueble = new InmuebleModel();
-      //  var_dump($inmueble);
-       
+  public function index($condicion = 1, $idusuario = null)
+  {
+    $inmueble = new InmuebleModel();
+    $usuario = new UsuarioModel();
+    $rol = new RolModel();
 
-        
-    
-        $data = ['titulo'=> "Listado de Inmuebles",
-                 'inmuebles'=>$inmueble->select('*')->findAll(),
-                 
-                  'ninmuebles'=>$inmueble->select('*')->where('idusuario',$idusuario)->countAllResults(),
-                  'cantidadinmo'=>$inmueble->select('*')->where('condicion',1)->countAllResults()];
-                 // dd($data);
-        return view('/Admin/Home/index', $data);
-      return view('/Admin/Layout/aside', $data);
-    }
+    $data = [
+      'titulo' => "Listado de Inmuebles",
 
-    public function get_gold_prices()
-    {
-      $apiUrl = 'https://www.alphavantage.co/query';
-      $apiKey = 'TU_CLAVE_DE_API';
+      'inmuebles' => $inmueble->select('inmuebles.*, usuario.nombre')
+        ->join('usuario', 'usuario.idusuario = inmuebles.idusuario')
+        ->where('inmuebles.condicion', 1)
+        ->findAll(),
+      'usuarios' => $usuario->select('*')
+        ->where('rol', 3)
+        ->where('condicion', 1)
+        ->countAllResults(),
 
-      $params = [
-          'function' => 'TIME_SERIES_INTRADAY',
-          'symbol' => 'XAUUSD',
-          'interval' => '5min',
-          'apikey' => $apiKey,
-      ];
+      'ninmuebles' => $inmueble->select('*')->where('idusuario', $idusuario)->countAllResults(),
+      'cantidadinmo' => $inmueble->select('*')->where('condicion', 1)->countAllResults(),
+      'cantidadusuarios' => $usuario->select('*')->where('condicion', 1)->countAllResults(),
+    ];
+   // dd($data);
+    return view('/Admin/Home/index', $data);
+    return view('/Admin/Layout/aside', $data);
+  }
 
-      $url = $apiUrl . '?' . http_build_query($params);
+  public function get_gold_prices()
+  {
+    $apiUrl = 'https://www.alphavantage.co/query';
+    $apiKey = 'TU_CLAVE_DE_API';
 
-      $curl = curl_init($url);
-      curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-      $response = curl_exec($curl);
-      curl_close($curl);
+    $params = [
+      'function' => 'TIME_SERIES_INTRADAY',
+      'symbol' => 'XAUUSD',
+      'interval' => '5min',
+      'apikey' => $apiKey,
+    ];
 
-      $data = json_decode($response, true);
+    $url = $apiUrl . '?' . http_build_query($params);
 
-      return $this->response->setJSON($data);
- 
+    $curl = curl_init($url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    $response = curl_exec($curl);
+    curl_close($curl);
+
+    $data = json_decode($response, true);
+
+    return $this->response->setJSON($data);
   }
 }

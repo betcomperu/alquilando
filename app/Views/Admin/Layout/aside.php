@@ -14,7 +14,7 @@
           <img src="<?= base_url('uploads') . "/". session()->get('foto') ; ?>" class="img-circle elevation-2" alt="User Image" width='100'>
         </div>
         <div class="info">
-          <a href="#" class="d-block"><?= $_SESSION['nombre'] ?></a>
+          <a href="<?= base_url('Usuarios/perfil/' . session()->get('idusuario'))?>" class="d-block"><?= $_SESSION['nombre'] ?></a>
         </div>
       </div>
 

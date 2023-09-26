@@ -1,0 +1,440 @@
+CRITICAL - 2023-07-25 13:02:28 --> Undefined variable $dato
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\perfil.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 39)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(284): view('/Admin/Usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('2')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-25 13:07:00 --> Undefined variable $usuario
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\perfil.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 39)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(284): view('/Admin/Usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('2')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-25 17:13:58 --> Undefined array key "titulo"
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\perfil.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 21)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(284): view('/Admin/Usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('2')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-25 17:14:23 --> Cannot access offset of type string on string
+#0 C:\laragon\www\alquilando\system\View\View.php(210): include()
+#1 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#3 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(284): view('/Admin/Usuario/...', Array)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('2')
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-07-25 17:49:51 --> CodeIgniter\I18n\Time::parse(): Argument #1 ($datetime) must be of type string, null given, called in C:\laragon\www\alquilando\app\Controllers\Usuarios.php on line 284
+#0 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(284): CodeIgniter\I18n\Time::parse(NULL)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-25 17:56:13 --> CodeIgniter\I18n\Time::parse(): Argument #1 ($datetime) must be of type string, null given, called in C:\laragon\www\alquilando\app\Controllers\Usuarios.php on line 284
+#0 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(284): CodeIgniter\I18n\Time::parse(NULL)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-25 17:56:14 --> CodeIgniter\I18n\Time::parse(): Argument #1 ($datetime) must be of type string, null given, called in C:\laragon\www\alquilando\app\Controllers\Usuarios.php on line 284
+#0 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(284): CodeIgniter\I18n\Time::parse(NULL)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-07-25 17:58:33 --> CodeIgniter\I18n\Time::parse(): Argument #1 ($datetime) must be of type string, null given, called in C:\laragon\www\alquilando\app\Controllers\Usuarios.php on line 284
+#0 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(284): CodeIgniter\I18n\Time::parse(NULL)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2023-07-25 23:18:12 --> Not unique table/alias: 'rol'
+CRITICAL - 2023-07-25 23:18:12 --> Not unique table/alias: 'rol'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(46): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:20:58 --> Not unique table/alias: 'rol'
+CRITICAL - 2023-07-25 23:20:58 --> Not unique table/alias: 'rol'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(46): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:21:04 --> Not unique table/alias: 'rol'
+CRITICAL - 2023-07-25 23:21:04 --> Not unique table/alias: 'rol'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(46): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:22:53 --> Not unique table/alias: 'rol'
+CRITICAL - 2023-07-25 23:22:53 --> Not unique table/alias: 'rol'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(47): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:22:55 --> Not unique table/alias: 'rol'
+CRITICAL - 2023-07-25 23:22:55 --> Not unique table/alias: 'rol'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(47): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:25:48 --> Unknown column 'condicion' in 'where clause'
+CRITICAL - 2023-07-25 23:25:48 --> Unknown column 'condicion' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(47): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:25:49 --> Unknown column 'condicion' in 'where clause'
+CRITICAL - 2023-07-25 23:25:49 --> Unknown column 'condicion' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(47): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:27:36 --> Unknown column 'condicion' in 'where clause'
+CRITICAL - 2023-07-25 23:27:36 --> Unknown column 'condicion' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(48): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:27:38 --> Unknown column 'condicion' in 'where clause'
+CRITICAL - 2023-07-25 23:27:38 --> Unknown column 'condicion' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(48): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:29:38 --> Unknown column 'condicion' in 'where clause'
+CRITICAL - 2023-07-25 23:29:38 --> Unknown column 'condicion' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(49): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:29:41 --> Unknown column 'condicion' in 'where clause'
+CRITICAL - 2023-07-25 23:29:41 --> Unknown column 'condicion' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(49): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:31:29 --> Unknown column 'condicion' in 'where clause'
+CRITICAL - 2023-07-25 23:31:29 --> Unknown column 'condicion' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(49): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:31:32 --> Unknown column 'condicion' in 'where clause'
+CRITICAL - 2023-07-25 23:31:32 --> Unknown column 'condicion' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(49): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:32:22 --> Unknown column 'condicion' in 'where clause'
+CRITICAL - 2023-07-25 23:32:22 --> Unknown column 'condicion' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(48): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:32:23 --> Unknown column 'condicion' in 'where clause'
+CRITICAL - 2023-07-25 23:32:23 --> Unknown column 'condicion' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(48): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:32:56 --> Unknown column 'u.rol' in 'on clause'
+CRITICAL - 2023-07-25 23:32:56 --> Unknown column 'u.rol' in 'on clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(48): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:33:56 --> Not unique table/alias: 'rol'
+CRITICAL - 2023-07-25 23:33:56 --> Not unique table/alias: 'rol'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(47): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:34:49 --> Not unique table/alias: 'rol'
+CRITICAL - 2023-07-25 23:34:49 --> Not unique table/alias: 'rol'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(46): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:36:05 --> Not unique table/alias: 'rol'
+CRITICAL - 2023-07-25 23:36:05 --> Not unique table/alias: 'rol'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(46): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:36:35 --> Not unique table/alias: 'rol'
+CRITICAL - 2023-07-25 23:36:35 --> Not unique table/alias: 'rol'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(46): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-07-25 23:46:02 --> Unknown column 'rol.nombre' in 'field list'
+CRITICAL - 2023-07-25 23:46:02 --> Unknown column 'rol.nombre' in 'field list'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `usuario...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `usuario...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Models\UsuarioModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(42): App\Models\UsuarioModel->obtenerUsuariosConRol()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-25 23:47:14 --> Undefined array key "nombrerol"
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\listar.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 69)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(51): view('/Admin/usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-07-25 23:51:50 --> Unknown column 'rol.nombre' in 'field list'
+CRITICAL - 2023-07-25 23:51:50 --> Unknown column 'rol.nombre' in 'field list'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `usuario...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `usuario...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Models\UsuarioModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(42): App\Models\UsuarioModel->obtenerUsuariosConRol()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-07-25 23:53:04 --> Unknown column 'rol.nombre_rol' in 'field list'
+CRITICAL - 2023-07-25 23:53:04 --> Unknown column 'rol.nombre_rol' in 'field list'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `usuario...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `usuario...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `usuario...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `usuario...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\alquilando\app\Models\UsuarioModel.php(47): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(42): App\Models\UsuarioModel->obtenerUsuariosConRol()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-07-25 23:53:40 --> Undefined array key "nombrerol"
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\listar.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 69)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(51): view('/Admin/usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-25 23:58:26 --> Undefined array key "nombre_rol"
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\listar.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 69)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(68): view('/Admin/usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->listar()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-25 23:58:28 --> Undefined array key "nombre_rol"
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\listar.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 69)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(68): view('/Admin/usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->listar()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

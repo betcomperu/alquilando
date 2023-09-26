@@ -76,7 +76,8 @@
                                     <td><?php echo $dato['distrito']; ?></td>
                                     
                                     <td>
-              <?php echo $dato['nombre']; ?>
+                                    <a href="<?= base_url('Usuarios/perfil/' . $dato['idusuario']) ?>">
+        <?php echo $dato['nombre']; ?>
 
               </td>
              

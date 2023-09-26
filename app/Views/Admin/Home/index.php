@@ -42,7 +42,7 @@
               <div class="icon">
                 <i class="ion ion-home"></i>
               </div>
-              <a href="<?php echo base_url()?>/inmuebles/listar" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="<?php echo base_url()?>/inmuebles/listar" class="small-box-footer">Ver Inmuebles <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -52,12 +52,12 @@
               <div class="inner">
                 <h3>53<sup style="font-size: 20px">%</sup></h3>
 
-                <p>Bounce Rate</p>
+                <p>Pagos del Mes</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
               </div>
-              <a href="#" class="small-box-footer">Más info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" class="small-box-footer">Ver pagos <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -65,14 +65,14 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>44</h3>
+                <h3><?php echo $usuarios; ?></h3>
 
-                <p>User Registrations</p>
+                <p>Inquilinos</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="<?php echo base_url()?>/usuarios/listar" class="small-box-footer">Ver Inquilinos <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->
@@ -82,12 +82,12 @@
               <div class="inner">
                 <h3>65</h3>
 
-                <p>Unique Visitors</p>
+                <p>Pagos atrasados</p>
               </div>
               <div class="icon">
                 <i class="ion ion-pie-graph"></i>
               </div>
-              <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+              <a href="#" class="small-box-footer">Ver pagos atrasados <i class="fas fa-arrow-circle-right"></i></a>
             </div>
           </div>
           <!-- ./col -->

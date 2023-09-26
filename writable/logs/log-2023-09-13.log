@@ -1,0 +1,138 @@
+CRITICAL - 2023-09-13 22:25:28 --> Undefined variable $time
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\perfil.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 80)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(281): view('/Admin/Usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('22')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:31:34 --> Undefined variable $time
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\perfil.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 80)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(282): view('/Admin/Usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('22')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:31:38 --> Undefined variable $time
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\perfil.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 80)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(282): view('/Admin/Usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:32:26 --> Undefined variable $time
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\perfil.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 80)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(283): view('/Admin/Usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:32:28 --> Undefined variable $time
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\perfil.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 80)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(283): view('/Admin/Usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:34:47 --> Undefined property: CodeIgniter\View\View::$time
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\perfil.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\laragon\\www\\...', 80)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(285): view('/Admin/Usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:35:12 --> Undefined property: CodeIgniter\View\View::$time
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\perfil.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\laragon\\www\\...', 80)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(285): view('/Admin/Usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:36:02 --> Undefined property: CodeIgniter\View\View::$time
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\perfil.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\laragon\\www\\...', 80)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(285): view('/Admin/Usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:39:16 --> Undefined variable $fechaFormateada
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\perfil.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 80)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(286): view('/Admin/Usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:39:18 --> Undefined variable $fechaFormateada
+#0 C:\laragon\www\alquilando\app\Views\Admin\Usuario\perfil.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 80)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Usuario/...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(286): view('/Admin/Usuario/...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-13 22:41:14 --> Cannot use object of type App\Models\UsuarioModel as array
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-13 23:05:43 --> "j-M-Y" no es un formato de fecha y hora válido
+#0 C:\laragon\www\alquilando\system\I18n\Time.php(242): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('j-M-Y')
+#1 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(279): CodeIgniter\I18n\Time::createFromFormat('j-M-Y', 'd-MMM-y', 'America/Lima')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-13 23:06:00 --> "j-M-Y" no es un formato de fecha y hora válido
+#0 C:\laragon\www\alquilando\system\I18n\Time.php(242): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('j-M-Y')
+#1 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(279): CodeIgniter\I18n\Time::createFromFormat('j-M-Y', '', 'America/Lima')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2023-09-13 23:14:23 --> Call to a member function parse() on null
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('22')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

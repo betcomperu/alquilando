@@ -49,23 +49,27 @@
                             <form id="form_validation" method="POST" action="<?php echo base_url();?>/usuario/insertar">
                                 <div class="form-group form-float">
                                     <input type="text" class="form-control" placeholder="Nombre" name="nombre" value="<?php echo set_value('nombre')?>" >
+                                   
                                 </div>
                                 <div class="form-group form-float">
                                     <input type="text" class="form-control" placeholder="Email" name="correo" value="<?php echo set_value('correo')?>">
+                                   
                                 </div>
                                 <div class="form-group form-float">
                                     <input type="text" class="form-control" placeholder="Usuario" name="usuario" value="<?php echo set_value('usuario')?>" >
+                                   
                                 </div>
                                
 
                                 <div class="form-group form-float">
                                     <input type="password" class="form-control" placeholder="Password" name="clave" value="<?php echo set_value('clave')?>" >
+                                  
                                 </div>
                                 <div class="form-group">
                                 <div class="col-lg-4 col-md-6">
                                     <p>Basic</p>
                                     <div class="mb-3">
-                                        <select class="form-control show-tick" name="rol">
+                                        <select class="form-control show-tick" name="rol" id="rol">
                                         <?php foreach($rs as $i):?>
                                             <option <?php set_select('rol'); ?>  value="<?php echo $i['idrol']; ?>"><?php echo $i['rol']; ?></option>
                                             

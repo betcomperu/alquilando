@@ -9,55 +9,62 @@ use App\libraries\Hash;
 use App\Controllers\BaseController;
 use Config\Services\session;
 use CodeIgniter\Files\File;
+use CodeIgniter\I18n\Time;
 
 /* Users Controller */
 
 class Usuarios extends Controller
 {
-
+    protected $usuarioModel;
+    protected $rolModel;
+    protected $session;
+    protected $time;
     function __construct()
     {
-
         /* Cargando biblioteca model y de sesión de usuario */
-        $users = new UsuarioModel();
-        $roles = new RolModel();
+        $this->usuarioModel = new \App\Models\UsuarioModel();
+        $this->rolModel = new \App\Models\RolModel();
         $this->session = \Config\Services::session();
         helper(['url', 'form']);
+        helper(['Fecha_helper']);
+         // Cargar la librería Time
+        $this->time = new \CodeIgniter\I18n\Time();
     }
 
     /*
 #### LLAMA A LA VISTA DE LISTADO DE USUARIOS #### 
 */
-    public function index($condicion = 1)
+    public function index($condicion = null)
     {
-
-        $users = new UsuarioModel();
+        $usuarios = $this->usuarioModel->findAll();
+        $roles = $this->rolModel->findAll();
 
         $data = [
-            'titulo' => 'Listado de Inquilinos',
-            'usuarios' => $users->select('*')
-                ->join('rol', 'rol.idrol=usuario.rol', 'left')
-                ->where('condicion', $condicion)->findAll()
+            'titulo' => "Lista de Inquilinos Activos",
+            'usuarios' => $this->usuarioModel->obtenerUsuariosConRol(),
+            'sesion_usuario' => $this->session->get('usuario')
         ];
-        /* Llamando las vistas */
-        // dd($data);
+
         return view('/Admin/usuario/listar', $data);
     }
 
-    public function listar($condicion = 1)
+    public function listar($condicion = null)
     {
 
-        $users = new UsuarioModel();
-        $roles = new RolModel();
+        // $users = new UsuarioModel();
+        //  $roles = new RolModel();
+
+        $usuarios = $this->usuarioModel->findAll();
+        $roles = $this->rolModel->findAll();
 
         $data = [
-            'titulo' => 'Listado de Inquilinos',
-            'usuarios' => $users->select('*')
-                ->join('rol', 'rol.idrol=usuario.rol', 'left')
-                ->where('condicion', $condicion)->findAll()
+            'titulo' => "Lista de Inquilinos Activos",
+            'usuarios' => $this->usuarioModel->obtenerUsuariosConRol(),
+            'sesion_usuario' => $this->session->get('usuario')
         ];
+
         /* Llamando las vistas */
-        // dd($data);
+        //   dd($data);
         return view('/Admin/usuario/listar', $data);
     }
 
@@ -67,18 +74,12 @@ class Usuarios extends Controller
     public function nuevo()
     {
 
-
-        $roles = new RolModel();
+        // $roles = new RolModel();
         $data = [
-            'titulo' => 'Agregar Usuarios',
-            'usuarios' => $roles->select('*')->findAll()
+            'titulo' => 'Agregar Inquilino Nuevo',
+            'usuarios' => $this->rolModel->select('*')->findAll()
         ];
-
-        echo view('Admin/layout/header');
-        //echo view('Admin/layout/top-menu');
-        echo view('Admin/layout/aside');
-        echo view('Admin/Usuario/nuevo', $data);
-        echo view('Admin/layout/footer');
+            return view('Admin/Usuario/nuevo', $data);   
     }
 
     /*
@@ -86,7 +87,6 @@ class Usuarios extends Controller
 */
     public function insertar()
     {
-
         $validation = service('validation');
         $validation->setRules([
             'nombre' => [
@@ -150,16 +150,8 @@ class Usuarios extends Controller
         session()->setFlashdata('registrado', " A registrado un nuevo usuario");
 
         return redirect()->to(base_url() . '/usuarios');
+    
     }
-
-    /* Graba lo que traen los POST */
-
-
-
-    /*
-#### LLAMA A EDITAR UN REGISTRO #### 
-*/
-
     public function edit($id = null)
     {
 
@@ -229,40 +221,36 @@ class Usuarios extends Controller
     public function eliminar($id)
     {
 
-        $users = new UsuarioModel();
+        $this->usuarioModel->update($id, ['condicion' => 0]);
 
-        $data = [
-            'condicion' => 0
-        ];
+        return redirect()->to(base_url() . '/usuarios')->with('success', 'Usuario eliminado perfectamente.');
 
-        $users->update($id, $data);
-        return redirect()->to(base_url() . '/usuarios');
     }
 
     /*
 #### LISTAR LOS ELIMINADOS#### 
 */
 
-public function eliminados($condicion = 0)
-{
+    public function eliminados($condicion = 0)
+    {
 
-    $usuario = new UsuarioModel();
-    $data = [
-        'titulo' => "Listado de Inmuebles  Registrados",
-        'usuarios' => $usuario->select('*')->where('condicion', $condicion)->findAll()
-    ];
-    return view('/Admin/Usuario/eliminados', $data);
-}
+        $usuario = new UsuarioModel();
+        $data = [
+            'titulo' => "Listado de Inmuebles  Registrados",
+            'usuarios' => $usuario->select('*')->where('condicion', $condicion)->findAll()
+        ];
+        return view('/Admin/Usuario/eliminados', $data);
+    }
+
+    public function borrar($id)
+    {
+        $inmueble = new UsuarioModel();
+        $inmueble->delete($id);
+        return redirect()->to(base_url() . '/usuarios/listar');
+    }
     /*
 #### EJECUTA LA RECUPERACION DEL REGISTRO#### 
 */
-public function borrar($id)
-{
-    $inmueble = new UsuarioModel();
-    $inmueble->delete($id);
-    return redirect()->to(base_url() . '/usuarios/listar');
-}
-
     public function recuperar($id)
     {
 
@@ -274,5 +262,24 @@ public function borrar($id)
 
         $users->update($id, $data);
         return redirect()->to(base_url() . '/usuarios');
+    }
+    /*
+#### EJECUTA MOSTRAR EL PERFIL DEL USUARIO#### 
+*/
+    public function perfil($id)
+    {
+        
+        $users = new UsuarioModel();
+        $usuario = $users->find($id);
+        $fechaAlta = $this->time->parse($usuario['fecha_alta']);
+     // dd($time);
+             $data = [
+            'titulo' => "Perfil de Usuario",
+            'usuario' => $users->find($id),
+           'fecha'=> $fechaAlta
+        
+        ];
+      
+        return view('/Admin/Usuario/perfil', $data);
     }
 }

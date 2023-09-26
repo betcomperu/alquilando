@@ -28,10 +28,11 @@ class Inmuebles extends BaseController
         $usuario = new UsuarioModel();
         $data = [
             'titulo' => "Listado de Inmuebles",
-            'inmuebles' => $inmueble->select('*')->where('condicion', $condicion)->findAll()
+            'inmuebles' => $inmueble->select('*')->where('condicion', $condicion)->findAll(),
+          //  'cantidadusuarios'=>$usuario->select('*')->where('condicion', $condicion)->countAllResults()
         ];
 
-
+        dd($data);
         //  $data = ['titulo'=> "Listado de Inmuebles",
         //   'inmuebles'=>$inmueble->$inmueble = new InmuebleModel();findAll()];
         return view('/Admin/home/index', $data);
@@ -54,7 +55,8 @@ class Inmuebles extends BaseController
         ->join('usuario', 'usuario.idusuario = inmuebles.idusuario')
         ->where('inmuebles.condicion', 1)
         ->findAll(),
-                'cantidadinmo' => $inmueble->select('*')->where('condicion',1)->countAllResults(),
+             //   'cantidadinmo' => $inmueble->select('*')->where('condicion',1)->countAllResults(),
+                'cantidadusuarios'=>$usuario->select('*')->where('condicion', 1)->countAllResults(),
                 'usuarioregistrante'=>$inmueble->join('usuario', 'usuario.idusuario = inmuebles.idusuario')
                 ->findAll()
             ];
@@ -66,9 +68,10 @@ class Inmuebles extends BaseController
                 'inmuebles' => $inmueble->select('inmuebles.*, usuario.nombre')->join('usuario', 'usuario.idusuario = inmuebles.idusuario')
                 ->where('usuario.idusuario', $idusuario)
                 ->findAll(),
-                'cantidadinmo' => $inmueble->select('*')->countAllResults()
+             //   'cantidadinmo' => $inmueble->select('*')->countAllResults(),
+              // 'cantidadusuarios'=>$usuario->select('*')->where('condicion', 1)->countAllResults()
             ];
-            // dd($data);
+          //   dd($data);
 
             return view('/Admin/home/inmuebles', $data);
         }

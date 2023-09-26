@@ -1,0 +1,50 @@
+CRITICAL - 2023-09-09 00:01:10 --> Call to undefined function App\Controllers\formatearFecha()
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-09 00:02:05 --> Call to undefined function App\Controllers\formatearFecha()
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-09 00:03:43 --> Call to undefined function App\Controllers\formatearFecha()
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-09 00:12:19 --> Call to undefined function App\Controllers\formatearFecha()
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-09 00:14:08 --> Call to undefined method App\Models\UsuarioModel::fechaFormateada
+#0 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(277): CodeIgniter\Model->__call('fechaFormateada', Array)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-09-09 00:14:33 --> Call to a member function fechaFormateada() on array
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-09 00:15:43 --> Call to a member function formatearFecha() on array
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-09-09 00:16:29 --> Call to undefined method App\Models\UsuarioModel::formatearFecha
+#0 C:\laragon\www\alquilando\app\Controllers\Usuarios.php(277): CodeIgniter\Model->__call('formatearFecha', Array)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Usuarios->perfil('11')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuarios))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -1,0 +1,14 @@
+CRITICAL - 2023-08-03 07:35:38 --> syntax error, unexpected token "public", expecting end of file
+#0 C:\laragon\www\alquilando\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('usuarios/elimin...')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('usuarios/elimin...')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2023-08-03 11:36:36 --> syntax error, unexpected token "public", expecting end of file
+#0 C:\laragon\www\alquilando\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('usuarios/nuevo')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(717): CodeIgniter\Router\Router->handle('usuarios/nuevo')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
