@@ -46,8 +46,9 @@
       <?php $isInvalidUsuario = (session()->getFlashdata('errUsuario')) ? 'is-invalid' : ''; ?>
 
       <input type="text" class="form-control <?= $isInvalidUsuario; ?>" id="usuario" name="usuario" placeholder="Ingrese su Usuario" value="<?= old('usuario') ?>">
+      <p class="text text-danger"><?= session()->getFlashdata('errUsuario'); ?></p>
       <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-      <p class="text text-danger"><?= session()->getFlashdata('errUsuario') ?></p>
+      
 
     </div>
     <div class="form-group has-feedback">
