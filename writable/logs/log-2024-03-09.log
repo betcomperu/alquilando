@@ -1,0 +1,88 @@
+CRITICAL - 2024-03-09 22:57:50 --> Undefined variable $datos
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\index.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 64)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(51): view('/Admin/pago/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-09 22:58:30 --> Undefined variable $data
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\index.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 64)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(51): view('/Admin/pago/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-09 22:58:47 --> Undefined variable $data
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\index.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 64)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(51): view('/Admin/pago/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-09 23:00:51 --> Undefined variable $data
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\index.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 64)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(51): view('/Admin/pago/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-09 23:03:43 --> Undefined variable $pagos
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\index.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 64)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(51): view('/Admin/pago/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-09 23:05:38 --> Undefined variable $data
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\index.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 64)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(51): view('/Admin/pago/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-09 23:06:24 --> Undefined variable $data
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\index.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 64)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(51): view('/Admin/pago/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-03-09 23:14:14 --> Undefined variable $dato
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\index.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 76)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(51): view('/Admin/pago/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

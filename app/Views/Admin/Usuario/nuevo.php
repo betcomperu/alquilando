@@ -26,9 +26,10 @@
       </div><!-- /.container-fluid -->
     </section>
 
+
     <!-- Main content -->
     <section class="content">
-
+NNNNNN
     <div class="swal" data-swal="<?= session()->get('registrado')?>"></div>
       <!-- Default box -->
       <div class="card">

@@ -13,7 +13,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0"><?php echo $titulo; ?></h1>
+          <h1 class="m-0"><?php echo $titulo; ?>***</h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
@@ -71,7 +71,7 @@
                                       
                                     </td>
                                     <td><?php echo $dato['estado']; ?></td>
-                                    <td><?php echo $dato['precio']; ?></td>
+                                    <td><?php echo number_format($dato['precio'], 2, '.', ','); ?></td> 
                                     <td><?php echo $dato['nombre_inmueble']; ?></td>
                                     <td><?php echo $dato['distrito']; ?></td>
                                     

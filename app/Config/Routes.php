@@ -42,6 +42,7 @@ $routes->get('/home', 'home::index');
 $routes->get('/salir', 'Login::salir');
 $routes->get('/login/entrar', 'Login::entrar');
 $routes->get('/usuarios/listar', 'usuarios::listar');
+$routes->get('/usuarios/pagos', 'Pagos::index');
 
 
 

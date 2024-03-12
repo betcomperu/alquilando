@@ -25,11 +25,11 @@
     </div><!-- /.container-fluid -->
   </div>
   <div class="swal" data-swal="<?= session()->get('registrado') ?>"></div>
-  <?php if (session()->getFlashdata('error')): ?>
+  <?php if (session()->getFlashdata('error')) : ?>
     <div class="alert alert-danger">
-        <?= session()->getFlashdata('error') ?>
+      <?= session()->getFlashdata('error') ?>
     </div>
-<?php endif; ?>
+  <?php endif; ?>
 
   <div class="card-body">
     <div class="box-header with-border">
@@ -53,7 +53,7 @@
             <th>Usuario</th>
             <th>Rol</th>
             <th>Imagen</th>
-       
+
             <th>Opciones</th>
           </tr>
         </thead>
@@ -62,11 +62,11 @@
 
           <?php foreach ($usuarios as $dato) : ?>
             <tr>
-            <td>
-    <a href="<?= base_url('Usuarios/perfil/' . $dato['idusuario']) ?>">
-        <?php echo $dato['nombre']; ?>
-    </a>
-</td> 
+              <td>
+                <a href="<?= base_url('Usuarios/perfil/' . $dato['idusuario']) ?>">
+                  <?php echo $dato['nombre']; ?>
+                </a>
+
               <td><?php echo $dato['correo']; ?></td>
               <td><?php echo $dato['usuario']; ?></td>
               <td>
@@ -77,7 +77,7 @@
                     //  echo '<p class="text-green">'.$valrol.'</p>';
                     echo '<p class="text-success"><b>' . $valrol . '</b></p>';
                     break;
-          
+
                   default:
                     echo '<p class="text-danger"><b>' . $valrol . '</b></p>';
                     break;
@@ -87,7 +87,7 @@
               <td>
                 <img src="<?= base_url('uploads') . "/"; ?><?php echo $dato['foto']; ?>" alt="img-responsive" width="80">
               </td>
-           
+
               <td>
                 <a class="btn btn-primary" href="<?= base_url('Usuarios/edit/' . $dato['idusuario']) ?>" role="button">Editar</a>
                 <a class="btn btn-danger eliminar" href="<?= base_url('Usuarios/eliminar/' . $dato['idusuario']) ?>" role="button">Eiminar</a>
@@ -105,33 +105,15 @@
             <th>Usuario</th>
             <th>Rol</th>
             <th>Imagen</th>
-          
+
             <th>Opciones</th>
           </tr>
         </tfoot>
       </table>
     </div>
 
-    <!-- /.card-body -->
-    <div class="card-footer">
-      Footer
-    </div>
-    <!-- /.card-footer-->
   </div>
-  <!-- /.content-header -->
 
-  <!-- Main content -->
-  <section class="content">
-    <div class="container-fluid">
-      <!-- Small boxes (Stat box) -->
-      <div class="row">
-
-      </div>
-      <!-- /.row -->
-
-      <!-- /.row (main row) -->
-    </div><!-- /.container-fluid -->
-  </section>
 
   <!-- /.content -->
 </div>

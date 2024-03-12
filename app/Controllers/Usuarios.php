@@ -10,6 +10,8 @@ use App\Controllers\BaseController;
 use Config\Services\session;
 use CodeIgniter\Files\File;
 use CodeIgniter\I18n\Time;
+use CodeIgniter\HTTP\Request;
+
 
 /* Users Controller */
 
