@@ -84,6 +84,12 @@
                   <p>Pagos</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url(); ?>/usuarios/hacerpago" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Hacer Pagos</p>
+                </a>
+              </li>
               
             </ul>
           </li>

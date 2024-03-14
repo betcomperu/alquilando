@@ -50,4 +50,26 @@ class Pagos extends BaseController
           // dd($data);
         return view('/Admin/pago/index', $data);
     }
+    public function hacerpago()
+    {
+        //mostrar la vista para hacer pago
+        $data = [
+            'titulo' => "Hacer Pago de Inquilinos",
+      
+            'sesion_usuario' => $this->session->get('usuario')
+        ];
+        return view ('/Admin/pago/hacerpago', $data);
+
+
+}
+public function pagaralquiler($id)
+{
+    $data = [
+        'id' => $id,
+        'titulo' => "Hacer Pago del Inquilino".$id,
+    ];
+    return view ('/Admin/pago/pagaralquiler', $data);
+
+}
+
 }

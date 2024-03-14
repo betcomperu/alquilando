@@ -43,6 +43,8 @@ $routes->get('/salir', 'Login::salir');
 $routes->get('/login/entrar', 'Login::entrar');
 $routes->get('/usuarios/listar', 'usuarios::listar');
 $routes->get('/usuarios/pagos', 'Pagos::index');
+$routes->get('/usuarios/hacerpago', 'Pagos::hacerpago');
+$routes->get('/usuarios/pagar/(:any)', 'Pagos::pagaralquiler/$1');
 
 
 
