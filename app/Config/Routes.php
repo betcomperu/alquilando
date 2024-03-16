@@ -44,8 +44,9 @@ $routes->get('/login/entrar', 'Login::entrar');
 $routes->get('/usuarios/listar', 'usuarios::listar');
 $routes->get('/usuarios/pagos', 'Pagos::index');
 $routes->get('/usuarios/hacerpago', 'Pagos::hacerpago');
+$routes->post('/usuarios/guardarpago', 'Pagos::guardarpago');
 $routes->get('/usuarios/pagar/(:any)', 'Pagos::pagaralquiler/$1');
-
+$routes->get('/Pagos/generarReciboPDF/(:any)', 'Pagos::generarReciboPDF/$1');
 
 
 

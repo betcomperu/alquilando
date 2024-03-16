@@ -61,21 +61,50 @@
 
         <tbody>
 
-          <?php foreach ($pago as $p) : ?>
-            <tr>
+        <?php foreach ($pago as $p): ?>
+    <tr>
+        
+        <td>
+            <!-- Buscar el nombre del inquilino (usuario) usando el ID del usuario asociado al pago -->
+            <?php
+            $nombreInquilino = null;
+            foreach ($usuarios as $usuario) {
+                if ($usuario['idusuario'] === $p['id_usuario']) {
+                    $nombreInquilino = $usuario['nombre'];
+                    break;
+                }
+            }
+            echo esc($nombreInquilino); // Mostrar el nombre del inquilino
+            ?>
+        </td>
+        <td><?= esc($p['metodo_pago']) ?></td>
+        <td><?= esc($p['numero_operacion']) ?></td>
+        <td><?= esc($p['monto']) ?></td>
+        <td><?= esc($p['comprobante']) ?></td>
+        <td><?= esc($p['fecha_pago']) ?></td>
+        <td>
+            <!-- Buscar el nombre del inmueble usando el ID del inmueble asociado al pago -->
+            <?php
+            $nombreInmueble = null;
+            foreach ($inmuebles as $inmueble) {
+                if ($inmueble['id_inmueble'] === $p['id_inmueble']) {
+                    $nombreInmueble = $inmueble['direccion'];
+                    break;
+                }
+            }
+            echo esc($nombreInmueble); // Mostrar el nombre del inmueble
+            ?>
+        </td>
+        <td>
+            <a class="btn btn-primary" href="<?= base_url('Usuarios/edit/' . $p['id_usuario']) ?>" role="button">Editar</a>
+            <a class="btn btn-danger eliminar" href="<?= base_url('Usuarios/eliminar/' . $p['id_usuario']) ?>" role="button">Eliminar</a>
+            
+            <a class="btn btn-success" href="<?= base_url('Pagos/generarReciboPDF/' . $p['idpagos']) ?>" role="button">Imprimir Recibo</a>
 
-              <td><?= esc($p['id_usuario']) ?></td>
-              <td><?= esc($p['metodo_pago']) ?></td>
-              <td><?= esc($p['numero_operacion']) ?></td>
-              <td><?= esc($p['monto']) ?></td>
-              <td><?= esc($p['comprobante']) ?></td>
-              <td><?= esc($p['fecha_pago']) ?></td>
-              <td><?= esc($p['id_inmueble']) ?></td>
-              <td> <a class="btn btn-primary" href="<?= base_url('Usuarios/edit/' . $p['id_usuario']) ?>" role="button">Editar</a>
-                <a class="btn btn-danger eliminar" href="<?= base_url('Usuarios/eliminar/' . $p['id_usuario']) ?>" role="button">Eiminar</a>
-              </td>
-            </tr>
-          <?php endforeach; ?>
+          </td>
+    </tr>
+<?php endforeach; ?>
+
 
         <tfoot>
           <tr>

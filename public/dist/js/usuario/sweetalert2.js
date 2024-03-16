@@ -48,33 +48,34 @@ $(document).on("click", ".eliminar", function (e) {
 //DETERMINAR NO EDITAR ADMIN NI AGREGARLE PAGO
 
 $(document).on("click", ".nopagar", function (e) {
-  e.preventDefault();
-  var href = $(this).attr("href"); // Obtener el atributo href del enlace
+    e.preventDefault();
+    var href = $(this).attr("href"); // Obtener el atributo href del enlace
 
-  var userId = href.split('/').pop(); // Extraer el idusuario de la URL
+    var userId = href.split('/').pop(); // Extraer el idusuario de la URL
 
-  // Verificar si el idusuario es igual a "1" (Admin)
-  if (userId === "1") {
-      Swal.fire("Acción no permitida", "No se puede eliminar al usuario Admin", "error");
-      return; // Detener el proceso
-  }
+    // Verificar si el idusuario es igual a "1" (Admin)
+    if (userId === "1") {
+        Swal.fire("Acción no permitida", "El usuario Admin no está sujeto a pago", "error");
+        return; // Detener el proceso
+    }
 
-  Swal.fire({
-      title: "¿Está usted seguro?",
-      text: "No se podrá recuperar luego!",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Si, quiero eliminarlo!",
-  }).then((result) => {
-      if (result.value) {
-          setTimeout(function () {
-              document.location.href = href;
-          }, 2000); // Retraso de 500 milisegundos (0.5 segundos)
-          Swal.fire("Eliminado!", "El usuario ha sido eliminado.", "success");
-      }
-  });
+    Swal.fire({
+        title: "¿Está usted seguro?",
+        text: "Esto procederá al pago.",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Sí, quiero proceder al pago",
+    }).then((result) => {
+        if (result.value) {
+            setTimeout(function () {
+                document.location.href = href;
+            }, 2000); // Retraso de 2 segundos (2000 milisegundos)
+            Swal.fire("Pago completado!", "El usuario ha realizado el pago.", "success");
+        }
+    });
 });
+
 
 

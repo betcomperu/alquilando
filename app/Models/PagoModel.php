@@ -53,4 +53,11 @@ public function Pagos()
     return $this->findAll();
 }
 
+
+
+public function obtenerPagoPorId($idpagos)
+{
+    return $this->where('idpagos', $idpagos)->first();
+}
+
 }
