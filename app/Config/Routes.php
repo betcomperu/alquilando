@@ -46,7 +46,9 @@ $routes->get('/usuarios/pagos', 'Pagos::index');
 $routes->get('/usuarios/hacerpago', 'Pagos::hacerpago');
 $routes->post('/usuarios/guardarpago', 'Pagos::guardarpago');
 $routes->get('/usuarios/pagar/(:any)', 'Pagos::pagaralquiler/$1');
-$routes->get('/Pagos/generarReciboPDF/(:any)', 'Pagos::generarReciboPDF/$1');
+$routes->get('/pagos/generarReciboPDF/(:any)', 'pagos::generarReciboPDF/$1');
+$routes->get('/pagos/muestraReciboPDF/(:any)', 'pagos::muestraReciboPDF/$1');
+$routes->get('/pdf/pdftest', 'PdfTest::testGeneratePdf');
 
 
 

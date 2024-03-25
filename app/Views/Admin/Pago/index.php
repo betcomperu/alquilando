@@ -36,6 +36,7 @@
       <a href="<?php echo base_url(); ?>/usuarios/hacerpago" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Añadir Pago</a>
       <a href="<?php echo base_url(); ?>/usuarios/eliminados" class="btn btn-warning"><i class="fas fa-list-ol"></i> Eliminados
       </a>
+      <a href="<?= base_url('pago/generatePDF' );?>" class="btn btn-success"><i class="fas fa-list-ol"></i> Genera PDF</a>
       <div class="box-tools pull-right">
         <br>
       </div>
@@ -52,7 +53,8 @@
             <th>Metodo de Pago</th>
             <th>Nro. Operación</th>
             <th>Monto S/</th>
-            <th>Comprobante</th>
+            <th>Entidad Bancaria</th>
+            <th>Detalle</th>
             <th>Fecha pago</th>
             <th>Inmueble</th>
             <th>Opciones</th>
@@ -80,7 +82,8 @@
         <td><?= esc($p['metodo_pago']) ?></td>
         <td><?= esc($p['numero_operacion']) ?></td>
         <td><?= esc($p['monto']) ?></td>
-        <td><?= esc($p['comprobante']) ?></td>
+        <td><?= esc($p['entidad_bancaria']) ?></td>
+        <td><?= esc($p['detalle']) ?></td>
         <td><?= esc($p['fecha_pago']) ?></td>
         <td>
             <!-- Buscar el nombre del inmueble usando el ID del inmueble asociado al pago -->
@@ -99,7 +102,7 @@
             <a class="btn btn-primary" href="<?= base_url('Usuarios/edit/' . $p['id_usuario']) ?>" role="button">Editar</a>
             <a class="btn btn-danger eliminar" href="<?= base_url('Usuarios/eliminar/' . $p['id_usuario']) ?>" role="button">Eliminar</a>
             
-            <a class="btn btn-success" href="<?= base_url('Pagos/generarReciboPDF/' . $p['idpagos']) ?>" role="button">Imprimir Recibo</a>
+            <a class="btn btn-success" href="<?= base_url('pagos/muestraReciboPDF/' . $p['idpagos']) ?>" role="button">Imprimir Recibo</a>
 
           </td>
     </tr>
@@ -113,7 +116,8 @@
             <th>Metodo de Pago</th>
             <th>Nro. Operación</th>
             <th>Monto S/</th>
-            <th>Comprobante</th>
+            <th>Entidad Bancaria</th>
+            <th>Detalle</th>
             <th>Fecha pago</th>
             <th>Inmueble</th>
             <th>Opciones</th>
@@ -129,3 +133,4 @@
 </div>
 
 <?= $this->endSection() ?>
+

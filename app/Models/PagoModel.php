@@ -14,7 +14,7 @@ class PagoModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['metodo_pago', 'numero_operacion', 'monto', 'comprobante', 'fecha_pago', 'id_inmueble', 'id_usuario', 'activo'];
+    protected $allowedFields    = ['metodo_pago','detalle', 'numero_operacion', 'monto', 'entidad_bancaria', 'fecha_pago', 'id_inmueble', 'id_usuario', 'activo'];
 
     // Dates
     protected $useTimestamps = false;
@@ -29,14 +29,22 @@ class PagoModel extends Model
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
 
-  public function insertaPago($idpago, $metodo_pago,$numero_operacion, $monto, $comprobante, $fecha_pago, $id_inmueble, $id_usuario, $activo){
+    protected $db;
+
+    public function __construct() {
+        parent::__construct();
+        $this->db = db_connect();
+    }
+
+  public function insertaPago($idpago,$detalle, $metodo_pago,$numero_operacion, $monto, $entidad_bancaria, $fecha_pago, $id_inmueble, $id_usuario, $activo){
 
     $this->insert([
         'idpagos' => $idpago,
+        'detalle' => $detalle,
         'metodo_pago' => $metodo_pago,
         'numero_operacion' => $numero_operacion,
         'monto' => $monto,
-        'comprobante' => $comprobante,
+        'entidad_bancaria' => $entidad_bancaria,
         'fecha_pago' => $fecha_pago,
         'id_inmueble' => $id_inmueble,
         'id_usuario' => $id_usuario,
@@ -56,8 +64,32 @@ public function Pagos()
 
 
 public function obtenerPagoPorId($idpagos)
+    {
+        $query = $this->db->table('pagos')
+            ->select('*')
+            ->where('idpagos', $idpagos)
+            ->get();
+
+        $result = $query->getResultArray();
+
+        if (count($result) > 0) {
+            return $result[0];
+        } else {
+            return null;
+        }
+    }
+
+    public function obtenerNombrePorId($idpagos)
 {
-    return $this->where('idpagos', $idpagos)->first();
+    // Obtener el pago y la información del usuario
+    $pago = $this->db->table('pagos')
+        ->select('pagos.*, usuario.nombre')
+        ->join('usuario', 'pagos.id_usuario = usuario.idusuario')
+        ->where('pagos.idpagos', $idpagos)
+        ->get()
+        ->getRowArray();
+
+    return $pago;
 }
 
 }

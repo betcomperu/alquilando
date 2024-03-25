@@ -75,8 +75,13 @@
           <input type="text" name="monto" id="monto" class="form-control">
         </div>
         <div class="form-group">
-          <label for="comprobante">Comprobante:</label>
-          <input type="text" name="comprobante" id="comprobante" class="form-control">
+        <label for="metodo_pago">Entidad Bancaria:</label>
+          <select name="entidad_bancaria" id="entidad_bancaria" class="form-control">
+            <option value="">Seleccione el Benco</option>
+            <option value="Transferencia">Interbank</option>
+            <option value="Efectivo">BCP</option>
+            <option value="Yape">BBVA</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="fecha_pago">Fecha de Pago:</label>

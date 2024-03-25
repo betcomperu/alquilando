@@ -2,13 +2,17 @@
 
 namespace App\Controllers;
 
+
+
 use App\Controllers\BaseController;
 use App\Models\PagoModel;
 use App\Models\InmuebleModel;
 use App\Models\UsuarioModel;
 use Config\Services\session;
 
-use TCPDF\TCPDF;
+use App\ThirdParty\fpdf\FPDF;
+use Dompdf\Dompdf;
+
 
 
 
@@ -30,15 +34,15 @@ class Pagos extends BaseController
         $this->pago = new PagoModel();
         helper(['url', 'form']);
         helper(['Fecha_helper']);
-         // Cargar la librería Time
+        // Cargar la librería Time
         $this->time = new \CodeIgniter\I18n\Time();
     }
 
- 
+
     public function index()
     {
-        
-        $inmuebles= $this->inmuebleModel->findAll();
+
+        $inmuebles = $this->inmuebleModel->findAll();
         $usuarios = $this->usuarioModel->findAll();
         $roles = $this->rolModel->findAll();
         $pagos = $this->pago->findAll();
@@ -46,8 +50,8 @@ class Pagos extends BaseController
         $data = [
             'titulo' => "Lista de Pago de Inquilinos",
             'inmuebles' => $inmuebles,
-            'usuarios' =>$usuarios,
-            'pago'=>$pagos,
+            'usuarios' => $usuarios,
+            'pago' => $pagos,
             'sesion_usuario' => $this->session->get('usuario')
         ];
 
@@ -56,7 +60,7 @@ class Pagos extends BaseController
     public function hacerpago()
     {
         //mostrar la vista para hacer pago
-        $inmuebles= $this->inmuebleModel->findAll();
+        $inmuebles = $this->inmuebleModel->findAll();
         $usuarios = $this->usuarioModel->findAll();
         $roles = $this->rolModel->findAll();
         $pagos = $this->pago->findAll();
@@ -64,108 +68,120 @@ class Pagos extends BaseController
         $data = [
             'titulo' => "Hacer Pago de Inquilinos",
             'inmuebles' => $inmuebles,
-            'usuarios' =>$usuarios,
-            'pago'=>$pagos,
-      
+            'usuarios' => $usuarios,
+            'pago' => $pagos,
+
             'sesion_usuario' => $this->session->get('usuario')
         ];
-        return view ('/Admin/pago/hacerpago', $data);
+        return view('/Admin/pago/hacerpago', $data);
+    }
+
+    public function pagaralquiler($id)
+    {
+
+        // Suponiendo que `$this->usuarioModel->find($id)` devuelve los datos del usuario correspondiente al ID
+        $usuario = $this->usuarioModel->find($id);
+        $usuarios = $this->usuarioModel->findAll();
+        $pagos = $this->pago->findAll();
+        // Si `$usuario` es nulo, puedes manejarlo según sea necesario, como mostrar un mensaje de error
+        if ($usuario === null) {
+            // Manejar el caso de usuario no encontrado
+            return redirect()->to('/ruta_de_redireccion');
+        }
+
+        $data = [
+            'nombre' => $usuario['nombre'], // Suponiendo que el nombre del usuario se encuentra en la propiedad 'nombre'
+            'titulo' => "Hacer Pago del Inquilino",
+            'id' => $id,
+            'titulo' => "Hacer Pago del Inquilino",
+        ];
+
+        return view('/Admin/pago/pagaralquiler', $data);
+    }
+
+    public function guardarpago()
+    {
+
+        // Validación de campos
+        $rules = [
+
+            'metodo_pago' => 'required',
+            'numero_operacion' => 'required',
+            'monto' => 'required|numeric',
+            'entidad_bancaria' => 'required',
+            'fecha_pago' => 'required|valid_date'
+        ];
+
+        if (!$this->validate($rules)) {
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
 
 
-}
 
-public function pagaralquiler($id)
+        // Obtener datos del formulario
+        $data = [
+            'id_usuario' => $this->request->getPost('id_usuario'),
+            'detalle' => $this->request->getPost('detalle'),
+            'metodo_pago' => $this->request->getPost('metodo_pago'),
+            'numero_operacion' => $this->request->getPost('numero_operacion'),
+            'entidad_bancaria' => $this->request->getPost('entidad_bancaria'),
+            'id_inmueble' => $this->request->getPost('id_inmueble'),
+            'monto' => $this->request->getPost('monto'),
+            'fecha_pago' => $this->request->getPost('fecha_pago')
+        ];
+        //dd($data);
+        // Guardar el nuevo alquiler
+        $this->pago->insert($data);
+
+        return redirect()->to(base_url('/usuarios/pagos'))->with('success', '¡El alquiler se ha guardado exitosamente!');
+    }
+    public function muestraReciboPDF($idpagos)
+    {
+        $data = [
+            "titulo" => "Recibo de Pago",
+            'idpagos' => $idpagos
+        ];
+        // Carga la vista HTML del recibo de pago
+        return view('Admin/Pago/verReciboPDF', $data);
+    }
+
+    public function generarReciboPDF($idpagos)
 {
-     
-     // Suponiendo que `$this->usuarioModel->find($id)` devuelve los datos del usuario correspondiente al ID
-     $usuario = $this->usuarioModel->find($id);
-    $usuarios = $this->usuarioModel->findAll();
-    $pagos = $this->pago->findAll();
-    // Si `$usuario` es nulo, puedes manejarlo según sea necesario, como mostrar un mensaje de error
-    if ($usuario === null) {
-        // Manejar el caso de usuario no encontrado
-        return redirect()->to('/ruta_de_redireccion');
-    }
+    // Obtener los datos del pago (aquí debes implementar tu lógica para obtener los datos del pago según el ID)
+    $pago = $this->pago->obtenerPagoPorId($idpagos);
+    $pago = $this->pago->obtenerNombrePorId($idpagos);
 
-    $data = [
-        'nombre' => $usuario['nombre'], // Suponiendo que el nombre del usuario se encuentra en la propiedad 'nombre'
-        'titulo' => "Hacer Pago del Inquilino",
-        'id' => $id,
-        'titulo' => "Hacer Pago del Inquilino",
-    ];
+    // Crear un nuevo objeto FPDF
+    $pdf = new \FPDF('L', 'mm', 'A5');
+    // Generar un número aleatorio de 5 dígitos
+    $codigo_recibo = 'Nro. Recibo: ' . rand(10000, 99999);
+    // Añadir una página
+    $pdf->AddPage();
 
-    return view('/Admin/pago/pagaralquiler', $data);
-   }
+    // Establecer la fuente y el tamaño del texto
+    $pdf->SetFont('Arial', 'B', 14);
 
-   public function guardarpago(){
+    // Agregar el título del recibo
+    $pdf->Cell(0, 10, 'Recibo de Pago Alquiler', 0, 1, 'C');
+    // Agregar el título del recibo
+    $pdf->Cell(0, 10, $codigo_recibo, 0, 1, 'C');
 
-     // Validación de campos
-     $rules = [
-        
-        'metodo_pago' => 'required',
-        'numero_operacion' => 'required',
-        'monto' => 'required|numeric',
-        'comprobante'=>'required',
-        'fecha_pago'=>'required|valid_date'
-    ];
+    // Agregar un marco alrededor del contenido
+    $pdf->Rect(5, 30, 190, 60);
 
-    if (!$this->validate($rules)) {
-        return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
-    }
+    // Agregar información del pago al recibo
+    $pdf->SetFont('Arial', '', 12);
+    $pdf->Text(10, 40, 'Inquilino: ' . $pago['nombre']);
+    $pdf->Text(10, 50, 'Monto: S/' . $pago['monto']);
+    $pdf->Text(10, 60, 'Fecha de abono: ' . $pago['fecha_pago']);
+    $pdf->Text(100, 40, 'Fecha de abono: ' . $pago['fecha_pago']);
+    
+    $pdf->image(base_url() . '/images/logo-house.png', 5, 3, 15, 10, 'PNG');
 
-   
+    // Vamos a configurar la salida antes
+    $this->response->setHeader('Content-Type', 'application/pdf');
 
-    // Obtener datos del formulario
-    $data = [
-        'id_usuario' => $this->request->getPost('id_usuario'),
-        'metodo_pago' => $this->request->getPost('metodo_pago'),
-        'numero_operacion' => $this->request->getPost('numero_operacion'),
-        'comprobante' => $this->request->getPost('comprobante'),
-        'id_inmueble' => $this->request->getPost('id_inmueble'),
-        'monto' => $this->request->getPost('monto'),
-        'fecha_pago' => $this->request->getPost('fecha_pago')
-    ];
-//dd($data);
-    // Guardar el nuevo alquiler
-    $this->pago->insert($data);
-
-    return redirect()->to(base_url('/usuarios/pagos'))->with('success', '¡El alquiler se ha guardado exitosamente!');
-   }
-
-   // En tu controlador
-   public function generarReciboPDF($idpagos)
-   {
-       // Obtener la información del pago según el $idPago
-       $pago = $this->pago->obtenerPagoPorId($idpagos);
-   
-       // Incluir la librería TCPDF
-       require_once ROOTPATH . 'vendor/tecnickcom/tcpdf/tcpdf.php';
-   
-       // Crear una nueva instancia de TCPDF
-       $pdf = new \TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
-   
-       // Configurar el encabezado y el pie de página
-       $pdf->SetHeaderData(PDF_HEADER_LOGO, PDF_HEADER_LOGO_WIDTH, PDF_HEADER_TITLE, PDF_HEADER_STRING);
-       $pdf->setFooterData(array(0,64,0), array(0,64,128));
-   
-       // Establecer el título del documento y el autor
-       $pdf->SetTitle('Recibo de Pago');
-       $pdf->SetAuthor('Tu Nombre');
-   
-       // Agregar una página
-       $pdf->AddPage();
-   
-       // Escribir el contenido del recibo
-       $pdf->SetFont('helvetica', '', 12);
-       $pdf->Write(0, 'Recibo de Pago', '', 0, 'C');
-   
-       // Ahora, imprime la información del pago en el PDF
-       $pdf->Ln(10);
-       $pdf->Write(0, 'ID de Pago: ' . $pago['idpagos']);
-       // Aquí puedes continuar agregando la información del pago al PDF
-   
-       // Finalmente, generamos el PDF y lo enviamos al navegador
-       $pdf->Output('recibo_pago_' . $idpagos . '.pdf', 'I');
-   }
-
+    // Generar el PDF y mostrarlo en el navegador
+    $pdf->Output('recibo_pago_' . $idpagos . '.pdf', 'I');
+}
 }
