@@ -67,6 +67,10 @@ protected $LayoutMode;         // layout display mode
 protected $metadata;           // document properties
 protected $CreationDate;       // document creation date
 protected $PDFVersion;         // PDF version number
+protected $B;
+protected $I;
+protected $U;
+protected $HREF;
 
 /*******************************************************************************
 *                               Public methods                                 *
@@ -75,6 +79,10 @@ protected $PDFVersion;         // PDF version number
 function __construct($orientation='P', $unit='mm', $size='A4')
 {
 	// Initialization of properties
+	$this->B = 0;
+    $this->I = 0;
+    $this->U = 0;
+    $this->HREF = '';
 	$this->state = 0;
 	$this->page = 0;
 	$this->n = 2;

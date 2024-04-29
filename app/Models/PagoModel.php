@@ -60,29 +60,38 @@ public function Pagos()
 {
     return $this->findAll();
 }
+public function updatePago($id, $data)
+{
+    $builder = $this->db->table('pagos');
+    $builder->where('idpagos', $id);
+    return $builder->update($data);
+}
 
 
+public function obtenerPagosPorIdUsuario($idpagos)
+{
+    $query = $this->db->table('pagos')
+        ->select('*')
+        ->where('id_usuario', $idpagos)
+        ->get();
+
+    return $query->getResultArray();
+}
 
 public function obtenerPagoPorId($idpagos)
     {
         $query = $this->db->table('pagos')
-            ->select('*')
-            ->where('idpagos', $idpagos)
-            ->get();
+        ->select('*')
+        ->where('idpagos', $idpagos)
+        ->get();
 
-        $result = $query->getResultArray();
-
-        if (count($result) > 0) {
-            return $result[0];
-        } else {
-            return null;
-        }
+    return $query->getResultArray();
     }
 
     public function obtenerNombrePorId($idpagos)
 {
     // Obtener el pago y la información del usuario
-    $pago = $this->db->table('pagos')
+     $pago = $this->db->table('pagos')
         ->select('pagos.*, usuario.nombre')
         ->join('usuario', 'pagos.id_usuario = usuario.idusuario')
         ->where('pagos.idpagos', $idpagos)
@@ -90,6 +99,19 @@ public function obtenerPagoPorId($idpagos)
         ->getRowArray();
 
     return $pago;
+}
+
+public function obtenerInmueblePorId($idpagos)
+{
+    // Obtener el pago y la información del usuario
+    $inmueble = $this->db->table('pagos')
+        ->select('pagos.*, inmuebles.direccion')
+        ->join('inmuebles', 'pagos.id_inmueble = inmuebles.id_inmueble')
+        ->where('pagos.idpagos', $idpagos)
+        ->get()
+        ->getRowArray();
+
+    return $inmueble;
 }
 
 }

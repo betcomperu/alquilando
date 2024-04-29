@@ -10,7 +10,7 @@ protected $HREF = '';
 
 function WriteHTML($html)
 {
-	// Intérprete de HTML
+	// HTML parser
 	$html = str_replace("\n",' ',$html);
 	$a = preg_split('/<(.*)>/U',$html,-1,PREG_SPLIT_DELIM_CAPTURE);
 	foreach($a as $i=>$e)
@@ -25,12 +25,12 @@ function WriteHTML($html)
 		}
 		else
 		{
-			// Etiqueta
+			// Tag
 			if($e[0]=='/')
 				$this->CloseTag(strtoupper(substr($e,1)));
 			else
 			{
-				// Extraer atributos
+				// Extract attributes
 				$a2 = explode(' ',$e);
 				$tag = strtoupper(array_shift($a2));
 				$attr = array();
@@ -47,7 +47,7 @@ function WriteHTML($html)
 
 function OpenTag($tag, $attr)
 {
-	// Etiqueta de apertura
+	// Opening tag
 	if($tag=='B' || $tag=='I' || $tag=='U')
 		$this->SetStyle($tag,true);
 	if($tag=='A')
@@ -58,7 +58,7 @@ function OpenTag($tag, $attr)
 
 function CloseTag($tag)
 {
-	// Etiqueta de cierre
+	// Closing tag
 	if($tag=='B' || $tag=='I' || $tag=='U')
 		$this->SetStyle($tag,false);
 	if($tag=='A')
@@ -67,7 +67,7 @@ function CloseTag($tag)
 
 function SetStyle($tag, $enable)
 {
-	// Modificar estilo y escoger la fuente correspondiente
+	// Modify style and select corresponding font
 	$this->$tag += ($enable ? 1 : -1);
 	$style = '';
 	foreach(array('B', 'I', 'U') as $s)
@@ -80,7 +80,7 @@ function SetStyle($tag, $enable)
 
 function PutLink($URL, $txt)
 {
-	// Escribir un hiper-enlace
+	// Put a hyperlink
 	$this->SetTextColor(0,0,255);
 	$this->SetStyle('U',true);
 	$this->Write(5,$txt,$URL);
@@ -89,20 +89,20 @@ function PutLink($URL, $txt)
 }
 }
 
-$html = 'Ahora puede imprimir fácilmente texto mezclando diferentes estilos: <b>negrita</b>, <i>itálica</i>,
-<u>subrayado</u>, o ¡ <b><i><u>todos a la vez</u></i></b>!<br><br>También puede incluir enlaces en el
-texto, como <a href="http://www.fpdf.org">www.fpdf.org</a>, o en una imagen: pulse en el logotipo.';
+$html = 'You can now easily print text mixing different styles: <b>bold</b>, <i>italic</i>,
+<u>underlined</u>, or <b><i><u>all at once</u></i></b>!<br><br>You can also insert links on
+text, such as <a href="http://www.fpdf.org">www.fpdf.org</a>, or on an image: click on the logo.';
 
 $pdf = new PDF();
-// Primera página
+// First page
 $pdf->AddPage();
 $pdf->SetFont('Arial','',20);
-$pdf->Write(5,'Para saber qué hay de nuevo en este tutorial, pulse ');
+$pdf->Write(5,"To find out what's new in this tutorial, click ");
 $pdf->SetFont('','U');
 $link = $pdf->AddLink();
-$pdf->Write(5,'aquí',$link);
+$pdf->Write(5,'here',$link);
 $pdf->SetFont('');
-// Segunda página
+// Second page
 $pdf->AddPage();
 $pdf->SetLink($link);
 $pdf->Image('logo.png',10,12,30,0,'','http://www.fpdf.org');

@@ -43,3 +43,5 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.7.1/css/buttons.dataTables.min.css">
 <!-- DataTables Responsive CSS -->
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
+<script src="/dist/js/myscript.js"></script>
+<link rel="stylesheet" href="/dist/css/misestilos.css">

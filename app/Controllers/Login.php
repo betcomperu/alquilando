@@ -20,6 +20,8 @@ class Login extends BaseController
     public function index()
     {
         //
+        // Acceder a la sesión
+    $session = session();
         $data = ['titulo' => "Login Administrador"];
 
         return view('/Admin/Home/Login', $data);

@@ -3,12 +3,12 @@ require('../fpdf.php');
 
 class PDF extends FPDF
 {
-protected $col = 0; // Columna actual
-protected $y0;      // Ordenada de comienzo de la columna
+protected $col = 0; // Current column
+protected $y0;      // Ordinate of column start
 
 function Header()
 {
-	// Cabacera
+	// Page header
 	global $title;
 
 	$this->SetFont('Arial','B',15);
@@ -20,22 +20,22 @@ function Header()
 	$this->SetLineWidth(1);
 	$this->Cell($w,9,$title,1,1,'C',true);
 	$this->Ln(10);
-	// Guardar ordenada
+	// Save ordinate
 	$this->y0 = $this->GetY();
 }
 
 function Footer()
 {
-	// Pie de página
+	// Page footer
 	$this->SetY(-15);
 	$this->SetFont('Arial','I',8);
 	$this->SetTextColor(128);
-	$this->Cell(0,10,'Página '.$this->PageNo(),0,0,'C');
+	$this->Cell(0,10,'Page '.$this->PageNo(),0,0,'C');
 }
 
 function SetCol($col)
 {
-	// Establecer la posición de una columna dada
+	// Set position at a given column
 	$this->col = $col;
 	$x = 10+$col*65;
 	$this->SetLeftMargin($x);
@@ -44,55 +44,55 @@ function SetCol($col)
 
 function AcceptPageBreak()
 {
-	// Método que acepta o no el salto automático de página
+	// Method accepting or not automatic page break
 	if($this->col<2)
 	{
-		// Ir a la siguiente columna
+		// Go to next column
 		$this->SetCol($this->col+1);
-		// Establecer la ordenada al principio
+		// Set ordinate to top
 		$this->SetY($this->y0);
-		// Seguir en esta página
+		// Keep on page
 		return false;
 	}
 	else
 	{
-		// Volver a la primera columna
+		// Go back to first column
 		$this->SetCol(0);
-		// Salto de página
+		// Page break
 		return true;
 	}
 }
 
 function ChapterTitle($num, $label)
 {
-	// Título
+	// Title
 	$this->SetFont('Arial','',12);
 	$this->SetFillColor(200,220,255);
-	$this->Cell(0,6,"Capítulo $num : $label",0,1,'L',true);
+	$this->Cell(0,6,"Chapter $num : $label",0,1,'L',true);
 	$this->Ln(4);
-	// Guardar ordenada
+	// Save ordinate
 	$this->y0 = $this->GetY();
 }
 
 function ChapterBody($file)
 {
-	// Abrir fichero de texto
+	// Read text file
 	$txt = file_get_contents($file);
-	// Fuente
+	// Font
 	$this->SetFont('Times','',12);
-	// Imprimir texto en una columna de 6 cm de ancho
+	// Output text in a 6 cm width column
 	$this->MultiCell(60,5,$txt);
 	$this->Ln();
-	// Cita en itálica
+	// Mention
 	$this->SetFont('','I');
-	$this->Cell(0,5,'(fin del extracto)');
-	// Volver a la primera columna
+	$this->Cell(0,5,'(end of excerpt)');
+	// Go back to first column
 	$this->SetCol(0);
 }
 
 function PrintChapter($num, $title, $file)
 {
-	// Añadir capítulo
+	// Add chapter
 	$this->AddPage();
 	$this->ChapterTitle($num,$title);
 	$this->ChapterBody($file);
@@ -100,10 +100,10 @@ function PrintChapter($num, $title, $file)
 }
 
 $pdf = new PDF();
-$title = '20000 Leguas de Viaje Submarino';
+$title = '20000 Leagues Under the Seas';
 $pdf->SetTitle($title);
-$pdf->SetAuthor('Julio Verne');
-$pdf->PrintChapter(1,'UN RIZO DE HUIDA','20k_c1.txt');
-$pdf->PrintChapter(2,'LOS PROS Y LOS CONTRAS','20k_c2.txt');
+$pdf->SetAuthor('Jules Verne');
+$pdf->PrintChapter(1,'A RUNAWAY REEF','20k_c1.txt');
+$pdf->PrintChapter(2,'THE PROS AND CONS','20k_c2.txt');
 $pdf->Output();
 ?>

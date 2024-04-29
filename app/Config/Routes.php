@@ -48,6 +48,10 @@ $routes->post('/usuarios/guardarpago', 'Pagos::guardarpago');
 $routes->get('/usuarios/pagar/(:any)', 'Pagos::pagaralquiler/$1');
 $routes->get('/pagos/generarReciboPDF/(:any)', 'pagos::generarReciboPDF/$1');
 $routes->get('/pagos/muestraReciboPDF/(:any)', 'pagos::muestraReciboPDF/$1');
+$routes->get('/pagos/editarReciboPDF/(:any)', 'pagos::editarReciboPDF/$1');
+$routes->post('/pagos/updatepago/(:any)', 'pagos::updatepago/$1');
+$routes->post('/pagos/validarpago/(:any)', 'pagos::validarpago/$1');
+$routes->post('/pagos/delete/(:any)', 'pagos::delete/$1');
 $routes->get('/pdf/pdftest', 'PdfTest::testGeneratePdf');
 
 

@@ -8,65 +8,71 @@
 <body>
 <h1>SetFont</h1>
 <code>SetFont(<b>string</b> family [, <b>string</b> style [, <b>float</b> size]])</code>
-<h2>Descripción</h2>
-Establece la fuente usada para imprimir cadenas de carácteres. Es obligatorio invocar este método por lo menos una vez antes de imprimir texto.<br>
+<h2>Description</h2>
+Sets the font used to print character strings. It is mandatory to call this method at least once before printing text.
 <br>
-La fuente puede ser una estándar o una adicionada via el método AddFont(). La fuentes estándar usan codificación cp1252 (Western Europe) de Windows.<br>
 <br>
-El método puede ser invocado antes que la primera página sea creada y es mantenido de página a página.<br>
+The font can be either a standard one or a font added by the AddFont() method. Standard fonts
+use the Windows encoding cp1252 (Western Europe).
 <br>
-Si sólo desea cambiar el tamaño de la fuente actual, es más simple invocar SetFontSize().
-<h2>Parámetros</h2>
+<br>
+The method can be called before the first page is created and the font is kept from page to page.
+<br>
+<br>
+If you just wish to change the current font size, it is simpler to call SetFontSize().
+<h2>Parameters</h2>
 <dl class="param">
 <dt><code>family</code></dt>
 <dd>
-Familia de fuente. Puede ser un nombre definido por AddFont() o una de las familias estándar (no sensible a mayúsculas o minúsculas):
+Family font. It can be either a name defined by AddFont() or one of the standard families (case
+insensitive):
 <ul>
-<li><code>Courier</code> (fixed-width)
-<li><code>Helvetica</code> o <code>Arial</code> (sinónimo; sans serif)
-<li><code>Times</code> (serif)
-<li><code>Symbol</code> (symbolic)
-<li><code>ZapfDingbats</code> (symbolic)
+<li><code>Courier</code> (fixed-width)</li>
+<li><code>Helvetica</code> or <code>Arial</code> (synonymous; sans serif)</li>
+<li><code>Times</code> (serif)</li>
+<li><code>Symbol</code> (symbolic)</li>
+<li><code>ZapfDingbats</code> (symbolic)</li>
 </ul>
-Tambien es posible pasar un cadena vacia. En este caso, se mantiene la familia actual.
+It is also possible to pass an empty string. In that case, the current family is kept.
 </dd>
 <dt><code>style</code></dt>
 <dd>
-Estilo de fuente. Los valores posibles son (no sensible a mayúsculas o minúsculas):
+Font style. Possible values are (case insensitive):
 <ul>
-<li>cadena vacia: regular
-<li><code>B</code>: bold
-<li><code>I</code>: italic
-<li><code>U</code>: underline
+<li>empty string: regular</li>
+<li><code>B</code>: bold</li>
+<li><code>I</code>: italic</li>
+<li><code>U</code>: underline</li>
 </ul>
-o cualquier combinación. El valor por defecto es regular.
-Los estilos Bold e italic no aplican para <code>Symbol</code> y <code>ZapfDingbats</code>.
+or any combination. The default value is regular.
+Bold and italic styles do not apply to <code>Symbol</code> and <code>ZapfDingbats</code>.
 </dd>
 <dt><code>size</code></dt>
 <dd>
-Tamaño de fuente en puntos.
+Font size in points.
 <br>
-El valor por defecto es el tamaño actual. Si ningún tamaño ha sido especificado desde el comienzo del documento, toma el valor de 12.
+The default value is the current size. If no size has been specified since the beginning of
+the document, the value is 12.
 </dd>
 </dl>
-<h2>Ejemplo</h2>
+<h2>Example</h2>
 <div class="doc-source">
 <pre><code>// Times regular 12
 $pdf-&gt;SetFont('Times');
 // Arial bold 14
 $pdf-&gt;SetFont('Arial', 'B', 14);
-// Elimina bold
+// Removes bold
 $pdf-&gt;SetFont('');
-// Times bold, italic y underlined 14
+// Times bold, italic and underlined 14
 $pdf-&gt;SetFont('Times', 'BIU');</code></pre>
 </div>
-<h2>Vea además</h2>
+<h2>See also</h2>
 <a href="addfont.htm">AddFont</a>,
 <a href="setfontsize.htm">SetFontSize</a>,
 <a href="cell.htm">Cell</a>,
 <a href="multicell.htm">MultiCell</a>,
 <a href="write.htm">Write</a>
 <hr style="margin-top:1.5em">
-<div style="text-align:center"><a href="index.htm">Inicio</a></div>
+<div style="text-align:center"><a href="index.htm">Index</a></div>
 </body>
 </html>

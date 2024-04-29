@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b61ce1c9fbf9b7d66b5f342a2631f35a",
+    "content-hash": "bd63924878e53afafa3301a79c8acc13",
     "packages": [
         {
             "name": "dompdf/dompdf",
@@ -469,17 +469,21 @@
         },
         {
             "name": "setasign/fpdf",
-            "version": "1.8",
+            "version": "1.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Setasign/FPDF.git",
-                "reference": "a8a76e8cfc1db7b1a18c096a021a0cdff70db6b5"
+                "reference": "0838e0ee4925716fcbbc50ad9e1799b5edfae0a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Setasign/FPDF/zipball/a8a76e8cfc1db7b1a18c096a021a0cdff70db6b5",
-                "reference": "a8a76e8cfc1db7b1a18c096a021a0cdff70db6b5",
+                "url": "https://api.github.com/repos/Setasign/FPDF/zipball/0838e0ee4925716fcbbc50ad9e1799b5edfae0a0",
+                "reference": "0838e0ee4925716fcbbc50ad9e1799b5edfae0a0",
                 "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "ext-zlib": "*"
             },
             "type": "library",
             "autoload": {
@@ -489,7 +493,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "no usage restriction"
+                "MIT"
             ],
             "authors": [
                 {
@@ -505,9 +509,9 @@
                 "pdf"
             ],
             "support": {
-                "source": "https://github.com/Setasign/FPDF/tree/1.8"
+                "source": "https://github.com/Setasign/FPDF/tree/1.8.6"
             },
-            "time": "2015-11-30T09:05:35+00:00"
+            "time": "2023-06-26T14:44:25+00:00"
         },
         {
             "name": "tecnickcom/tcpdf",

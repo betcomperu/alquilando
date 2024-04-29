@@ -16,6 +16,8 @@ class Home extends BaseController
     $inmueble = new InmuebleModel();
     $usuario = new UsuarioModel();
     $rol = new RolModel();
+    $session = session();
+    $userRol = $session->get('rol');
 
     $data = [
       'titulo' => "Listado de Inmuebles",
@@ -32,10 +34,19 @@ class Home extends BaseController
       'ninmuebles' => $inmueble->select('*')->where('idusuario', $idusuario)->countAllResults(),
       'cantidadinmo' => $inmueble->select('*')->where('condicion', 1)->countAllResults(),
       'cantidadusuarios' => $usuario->select('*')->where('condicion', 1)->countAllResults(),
+      'userRol'=>$userRol
     ];
-   // dd($data);
-    return view('/Admin/Home/index', $data);
-    return view('/Admin/Layout/aside', $data);
+    //dd($userRol);
+ 
+    if ($_SESSION['rol']==1) {
+      return view('/Admin/Home/index', $data);
+      return view('/Admin/Layout/aside', $data);
+    }
+   
+    if ($_SESSION['rol'] ==3) {
+      return view('/Admin/Home/index_user', $data);
+      return view('/Admin/Usuario/aside', $data);
+    }
   }
 
   public function get_gold_prices()

@@ -1,4 +1,7 @@
-<?= $this->extend('Admin/Layout/main.php') ?>
+
+<?php $userRol = ($_SESSION['rol'] == '1') ? $this->extend('Admin/Layout/main.php') : $this->extend('Admin/Layout/main_user.php'); ?>
+
+
 
 <?= $this->section('titulo') ?>
 <?php echo $titulo; ?>
@@ -27,14 +30,18 @@
   <div class="swal" data-swal="<?= session()->get('registrado')?>"></div>
 
   <div class="card-body">
-                <div class="box-header with-border">
-                    <a href="<?php echo base_url(); ?>/inmuebles/registro" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Agregar Inmueble </a>
-                    <a href="<?php echo base_url(); ?>/inmuebles/eliminados" class="btn btn-warning"><i class="fas fa-list-ol"></i>  Eliminados
-                    </a>
-                    <div class="box-tools pull-right">
-                        <br>
-                    </div>
-                </div>
+    
+  <?php if ( $_SESSION['rol'] == 1) : ?>
+    <div class="box-header with-border">
+        <a href="<?php echo base_url(); ?>/inmuebles/registro" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Agregar Inmueble </a>
+        <a href="<?php echo base_url(); ?>/inmuebles/eliminados" class="btn btn-warning"><i class="fas fa-list-ol"></i>  Eliminados
+        </a>
+        <div class="box-tools pull-right">
+            <br>
+        </div>
+    </div>
+<?php endif; ?>
+
                 <?php 
                 echo session()->getFlashdata('info');
                 ?>

@@ -1,4 +1,7 @@
-<?= $this->extend('Admin/Layout/main.php') ?>
+
+<?php $userRol = ($_SESSION['rol'] == '1') ? $this->extend('Admin/Layout/main.php') : $this->extend('Admin/Layout/main_user.php'); ?>
+
+
 
 <?= $this->section('titulo') ?>
 <?php echo $titulo; ?>

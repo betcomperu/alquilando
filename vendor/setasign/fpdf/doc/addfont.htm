@@ -8,59 +8,60 @@
 <body>
 <h1>AddFont</h1>
 <code>AddFont(<b>string</b> family [, <b>string</b> style [, <b>string</b> file [, <b>string</b> dir]]])</code>
-<h2>Descripción</h2>
-Importa una fuente TrueType, OpenType o Type1 y la hace disponible. Es necesario primero generar
-un archivo de definición de fuente con la utilidad MakeFont.
+<h2>Description</h2>
+Imports a TrueType, OpenType or Type1 font and makes it available. It is necessary to generate a font
+definition file first with the MakeFont utility.
 <br>
 <br>
-El archivo de definición (y el archivo de fuente mismo cuando es incorporado) debe estar presente en:
+The definition file (and the font file itself in case of embedding) must be present in:
 <ul>
-<li>El directorio indicado por el cuarto parámetro (si ese parámetro está establecido)</li>
-<li>El directorio indicado por la constante <code>FPDF_FONTPATH</code> (si es que ha sido definida)
-<li>El directorio de fuentes incluido en el directorio que contiene fpdf.php
+<li>The directory indicated by the 4th parameter (if that parameter is set)</li>
+<li>The directory indicated by the <code>FPDF_FONTPATH</code> constant (if that constant is defined)</li>
+<li>The <code>font</code> directory located in the same directory as <code>fpdf.php</code></li>
 </ul>
-Si el archivo no es encuentra, se genera el error "Could not include font definition file".
-<h2>Parámetros</h2>
+If the file is not found, the error "Could not include font definition file" is raised.
+<h2>Parameters</h2>
 <dl class="param">
 <dt><code>family</code></dt>
 <dd>
-Familia de fuente. El nombre puede ser elegido de forma arbitraria.
+Font family. The name can be chosen arbitrarily. If it is a standard family name, it will
+override the corresponding font.
 </dd>
 <dt><code>style</code></dt>
 <dd>
-Estilo de fuente. Los valores posibles son (case insensitive):
+Font style. Possible values are (case insensitive):
 <ul>
-<li>cadena vacía: regular
-<li><code>B</code>: bold (negrita)
-<li><code>I</code>: italic (cursiva)
-<li><code>BI</code> o <code>IB</code>: bold italic (negrita cursiva)
+<li>empty string: regular</li>
+<li><code>B</code>: bold</li>
+<li><code>I</code>: italic</li>
+<li><code>BI</code> or <code>IB</code>: bold italic</li>
 </ul>
-El valor por defecto es regular.
+The default value is regular.
 </dd>
 <dt><code>file</code></dt>
 <dd>
-El archivo de definición de fuente.
+The name of the font definition file.
 <br>
-Por defecto, el nombre es compuesto de la familia y estilo de fuente, en minúsculas y sin espacios.
+By default, it is built from the family and style, in lower case with no space.
 </dd>
 <dt><code>dir</code></dt>
 <dd>
-El directorio donde cargar el archivo de definición.
+The directory where to load the definition file.
 <br>
-Si no se especifica, se utiliza el directorio predeterminado.
+If not specified, the default directory will be used.
 </dd>
 </dl>
-<h2>Ejemplo</h2>
+<h2>Example</h2>
 <div class="doc-source">
 <pre><code>$pdf-&gt;AddFont('Comic', 'I');</code></pre>
 </div>
-es equivalente a:
+is equivalent to:
 <div class="doc-source">
 <pre><code>$pdf-&gt;AddFont('Comic', 'I', 'comici.php');</code></pre>
 </div>
-<h2>Vea además</h2>
+<h2>See also</h2>
 <a href="setfont.htm">SetFont</a>
 <hr style="margin-top:1.5em">
-<div style="text-align:center"><a href="index.htm">Inicio</a></div>
+<div style="text-align:center"><a href="index.htm">Index</a></div>
 </body>
 </html>

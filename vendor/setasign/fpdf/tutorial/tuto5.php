@@ -3,10 +3,10 @@ require('../fpdf.php');
 
 class PDF extends FPDF
 {
-// Cargar los datos
+// Load data
 function LoadData($file)
 {
-	// Leer las líneas del fichero
+	// Read file lines
 	$lines = file($file);
 	$data = array();
 	foreach($lines as $line)
@@ -14,14 +14,14 @@ function LoadData($file)
 	return $data;
 }
 
-// Tabla simple
+// Simple table
 function BasicTable($header, $data)
 {
-	// Cabecera
+	// Header
 	foreach($header as $col)
 		$this->Cell(40,7,$col,1);
 	$this->Ln();
-	// Datos
+	// Data
 	foreach($data as $row)
 	{
 		foreach($row as $col)
@@ -30,16 +30,16 @@ function BasicTable($header, $data)
 	}
 }
 
-// Una tabla más completa
+// Better table
 function ImprovedTable($header, $data)
 {
-	// Anchuras de las columnas
-	$w = array(40, 35, 45, 40);
-	// Cabeceras
+	// Column widths
+	$w = array(40, 35, 40, 45);
+	// Header
 	for($i=0;$i<count($header);$i++)
 		$this->Cell($w[$i],7,$header[$i],1,0,'C');
 	$this->Ln();
-	// Datos
+	// Data
 	foreach($data as $row)
 	{
 		$this->Cell($w[0],6,$row[0],'LR');
@@ -48,29 +48,29 @@ function ImprovedTable($header, $data)
 		$this->Cell($w[3],6,number_format($row[3]),'LR',0,'R');
 		$this->Ln();
 	}
-	// Línea de cierre
+	// Closing line
 	$this->Cell(array_sum($w),0,'','T');
 }
 
-// Tabla coloreada
+// Colored table
 function FancyTable($header, $data)
 {
-	// Colores, ancho de línea y fuente en negrita
+	// Colors, line width and bold font
 	$this->SetFillColor(255,0,0);
 	$this->SetTextColor(255);
 	$this->SetDrawColor(128,0,0);
 	$this->SetLineWidth(.3);
 	$this->SetFont('','B');
-	// Cabecera
-	$w = array(40, 35, 45, 40);
+	// Header
+	$w = array(40, 35, 40, 45);
 	for($i=0;$i<count($header);$i++)
 		$this->Cell($w[$i],7,$header[$i],1,0,'C',true);
 	$this->Ln();
-	// Restauración de colores y fuentes
+	// Color and font restoration
 	$this->SetFillColor(224,235,255);
 	$this->SetTextColor(0);
 	$this->SetFont('');
-	// Datos
+	// Data
 	$fill = false;
 	foreach($data as $row)
 	{
@@ -81,16 +81,16 @@ function FancyTable($header, $data)
 		$this->Ln();
 		$fill = !$fill;
 	}
-	// Línea de cierre
+	// Closing line
 	$this->Cell(array_sum($w),0,'','T');
 }
 }
 
 $pdf = new PDF();
-// Títulos de las columnas
-$header = array('País', 'Capital', 'Superficie (km2)', 'Pobl. (en miles)');
-// Carga de datos
-$data = $pdf->LoadData('paises.txt');
+// Column headings
+$header = array('Country', 'Capital', 'Area (sq km)', 'Pop. (thousands)');
+// Data loading
+$data = $pdf->LoadData('countries.txt');
 $pdf->SetFont('Arial','',14);
 $pdf->AddPage();
 $pdf->BasicTable($header,$data);

@@ -44,8 +44,10 @@
     echo session()->getFlashdata('info');
     ?>
     <div class="margin-top">
-      <h2>Registrar nuevo pago</h2>
+     
       <form action="<?= base_url('usuarios/guardarpago') ?>" method="post">
+
+    
         <div class="form-group">
           <label for="id_usuario">Inquilino:</label>
           <select name="id_usuario" id="id_usuario" class="form-control">
@@ -68,7 +70,7 @@
 
         <div class="form-group">
           <label for="numero_operacion">Número de Operación:</label>
-          <input type="text" name="numero_operacion" id="numero_operacion" class="form-control">
+          <input type="text" name="numero_operacion" id="numero_operacion" class="form-control" placeholder="Ingresar en nro Operación">
         </div>
         <div class="form-group">
           <label for="monto">Monto S/:</label>
@@ -77,16 +79,21 @@
         <div class="form-group">
         <label for="metodo_pago">Entidad Bancaria:</label>
           <select name="entidad_bancaria" id="entidad_bancaria" class="form-control">
-            <option value="">Seleccione el Benco</option>
-            <option value="Transferencia">Interbank</option>
-            <option value="Efectivo">BCP</option>
-            <option value="Yape">BBVA</option>
+            <option value="">Seleccione el Banco</option>
+            <option value="Banco Interbank">Interbank</option>
+            <option value="Banco de Crédito del Perú">BCP</option>
+            <option value="Banco Continental">BBVA</option>
           </select>
         </div>
         <div class="form-group">
           <label for="fecha_pago">Fecha de Pago:</label>
           <input type="date" name="fecha_pago" id="fecha_pago" class="form-control">
         </div>
+        <div class="form-group">
+          <label for="numero_operacion">Detalles:</label>
+          <input type="text" name="detalle" id="detalle" class="form-control">
+        </div>
+
         <div class="form-group">
           <label for="id_inmueble">Inmueble:</label>
           <select name="id_inmueble" id="id_inmueble" class="form-control">
@@ -96,6 +103,21 @@
             <?php endforeach; ?>
           </select>
         </div>
+
+        <div class="form-group">
+       
+¿Recibo pagado? : 
+<div class="form-check">
+  <input type="radio" class="form-check-input" id="radio1" name="activo" value="0" checked>Pendiente de pago
+  <label class="form-check-label" for="radio1"></label>
+</div>
+<div class="form-check">
+  <input type="radio" class="form-check-input" id="radio2" name="activo" value="1">Recibo pagado
+  <label class="form-check-label" for="radio2"></label>
+</div>
+
+</div>
+
         <button type="submit" class="btn btn-primary">Guardar Pago</button>
       </form>
     </div>
