@@ -1,0 +1,440 @@
+CRITICAL - 2024-04-03 11:31:11 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\editarrecibo.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\laragon\\www\\...', 67)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(171): view('/Admin/pago/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('12')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-03 11:33:54 --> Undefined array key "metodo_pago"
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\editarrecibo.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 67)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(171): view('/Admin/pago/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('12')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-03 11:59:40 --> Undefined variable $pagoid
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\editarrecibo.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 67)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(172): view('/Admin/pago/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('2')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-03 12:54:26 --> Undefined variable $idUsuario
+#0 C:\laragon\www\alquilando\app\Models\PagoModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(149): App\Models\PagoModel->obtenerPagoPorId('12')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('12')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-04-03 12:55:23 --> Undefined variable $idUsuario
+#0 C:\laragon\www\alquilando\app\Models\PagoModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(149): App\Models\PagoModel->obtenerPagoPorId('12')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('12')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-04-03 12:59:41 --> Undefined variable $idUsuario
+#0 C:\laragon\www\alquilando\app\Models\PagoModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(150): App\Models\PagoModel->obtenerPagoPorId('12')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('12')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-04-03 12:59:42 --> Undefined variable $idUsuario
+#0 C:\laragon\www\alquilando\app\Models\PagoModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(150): App\Models\PagoModel->obtenerPagoPorId('12')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('12')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-04-03 12:59:46 --> Undefined variable $idUsuario
+#0 C:\laragon\www\alquilando\app\Models\PagoModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(150): App\Models\PagoModel->obtenerPagoPorId('12')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('12')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-04-03 13:00:14 --> Undefined variable $idUsuario
+#0 C:\laragon\www\alquilando\app\Models\PagoModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(150): App\Models\PagoModel->obtenerPagoPorId('12')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('12')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-04-03 13:00:21 --> Undefined variable $idUsuario
+#0 C:\laragon\www\alquilando\app\Models\PagoModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(150): App\Models\PagoModel->obtenerPagoPorId('2')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('2')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-04-03 13:00:35 --> Undefined variable $idUsuario
+#0 C:\laragon\www\alquilando\app\Models\PagoModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(150): App\Models\PagoModel->obtenerPagoPorId('2')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('2')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-04-03 13:00:39 --> Undefined variable $idUsuario
+#0 C:\laragon\www\alquilando\app\Models\PagoModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(150): App\Models\PagoModel->obtenerPagoPorId('12')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('12')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-04-03 13:02:20 --> Undefined variable $idUsuario
+#0 C:\laragon\www\alquilando\app\Models\PagoModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(150): App\Models\PagoModel->obtenerPagoPorId('12')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('12')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-04-03 13:02:21 --> Undefined variable $idUsuario
+#0 C:\laragon\www\alquilando\app\Models\PagoModel.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(150): App\Models\PagoModel->obtenerPagoPorId('12')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('12')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-04-03 13:03:42 --> Call to undefined method App\Models\PagoModel::obtenerPagosPorIdUsuario
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(152): CodeIgniter\Model->__call('obtenerPagosPor...', Array)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('12')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 13:04:46 --> Call to undefined method App\Models\PagoModel::obtenerPagosPorIdUsuario
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(152): CodeIgniter\Model->__call('obtenerPagosPor...', Array)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('12')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 13:05:00 --> Call to undefined method App\Models\PagoModel::obtenerPagosPorIdUsuario
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(152): CodeIgniter\Model->__call('obtenerPagosPor...', Array)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('11')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 13:08:45 --> Undefined array key "metodo_pago"
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\editarrecibo.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 67)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(177): view('/Admin/pago/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('2')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-03 13:10:22 --> Undefined variable $pagosUsuario
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\editarrecibo.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 67)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(178): view('/Admin/pago/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('2')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-03 17:29:06 --> Undefined array key "fecha_pago"
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 203)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('8')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 17:31:53 --> Undefined array key "fecha_pago"
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 203)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('8')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 17:33:49 --> Undefined array key "fecha_pago"
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 203)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('8')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 17:35:12 --> Undefined array key "fecha_pago"
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 203)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('8')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 17:38:01 --> Undefined array key "fecha_pago"
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 203)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('8')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 17:38:04 --> Undefined array key "fecha_pago"
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 203)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('8')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 17:38:53 --> Undefined array key "fecha_pago"
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 203)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('6')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 17:39:06 --> Undefined array key "fecha_pago"
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 203)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('7')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 17:40:20 --> Undefined array key "fecha_pago"
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 203)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('7')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 18:14:29 --> Undefined variable $pagosUsuario
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 176)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 18:15:38 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\editarrecibo.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\laragon\\www\\...', 55)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(179): view('/Admin/pago/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-03 18:15:39 --> Trying to access array offset on value of type null
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\editarrecibo.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\laragon\\www\\...', 55)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(179): view('/Admin/pago/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-03 18:26:49 --> Undefined variable $inquilinoTraidoPorIdPago
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\editarrecibo.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 54)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(172): view('/Admin/pago/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-03 18:27:16 --> Undefined variable $inquilinoTraido
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\editarrecibo.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 54)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(172): view('/Admin/pago/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-03 18:27:38 --> Undefined array key "idusuario"
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\editarrecibo.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 55)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(172): view('/Admin/pago/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-03 18:30:35 --> Undefined variable $inquilino
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 153)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 18:31:05 --> Undefined variable $inquilino
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 153)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 18:31:08 --> Undefined variable $inquilino
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(153): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 153)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-04-03 18:31:34 --> Cannot access offset of type string on string
+#0 C:\laragon\www\alquilando\system\View\View.php(210): include()
+#1 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#3 C:\laragon\www\alquilando\app\Controllers\Pagos.php(172): view('/Admin/pago/edi...', Array)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-04-03 18:32:01 --> Undefined variable $pagoid
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\editarrecibo.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 55)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(172): view('/Admin/pago/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-03 18:32:33 --> Undefined array key "id_usuario"
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\editarrecibo.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 55)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(173): view('/Admin/pago/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-03 18:33:06 --> Cannot access offset of type string on string
+#0 C:\laragon\www\alquilando\system\View\View.php(210): include()
+#1 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#3 C:\laragon\www\alquilando\app\Controllers\Pagos.php(173): view('/Admin/pago/edi...', Array)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-04-03 18:34:27 --> Undefined variable $nombreInquilino
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\editarrecibo.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 53)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(173): view('/Admin/pago/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-03 18:35:48 --> Undefined variable $inquilinoTraido
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\editarrecibo.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 53)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(173): view('/Admin/pago/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-04-03 18:36:08 --> Undefined array key "direccion"
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\editarrecibo.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 53)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/edi...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(173): view('/Admin/pago/edi...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->editarReciboPDF('4')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-04-03 19:27:21 --> Column 'id_usuario' cannot be null
+CRITICAL - 2024-04-03 19:27:21 --> Column 'id_usuario' cannot be null
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\alquilando\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\alquilando\app\Controllers\Pagos.php(134): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->guardarpago()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-04-03 19:28:51 --> No hay datos para update
+#0 C:\laragon\www\alquilando\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\laragon\www\alquilando\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\laragon\www\alquilando\system\Model.php(651): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\laragon\www\alquilando\app\Controllers\Pagos.php(201): CodeIgniter\Model->update(Array)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->updatepago()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2024-04-03 19:31:16 --> Cannot add or update a child row: a foreign key constraint fails (`alquilando`.`pagos`, CONSTRAINT `pagos_ibfk_1` FOREIGN KEY (`id_inmueble`) REFERENCES `inmuebles` (`id_inmueble`))
+CRITICAL - 2024-04-03 19:31:16 --> Cannot add or update a child row: a foreign key constraint fails (`alquilando`.`pagos`, CONSTRAINT `pagos_ibfk_1` FOREIGN KEY (`id_inmueble`) REFERENCES `inmuebles` (`id_inmueble`))
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `pagos` ...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pagos` ...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pagos` ...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1913): CodeIgniter\Database\BaseConnection->query('UPDATE `pagos` ...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\laragon\www\alquilando\system\Model.php(651): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\laragon\www\alquilando\app\Controllers\Pagos.php(199): CodeIgniter\Model->update(NULL, Array)
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->updatepago()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2024-04-03 19:33:40 --> Cannot add or update a child row: a foreign key constraint fails (`alquilando`.`pagos`, CONSTRAINT `pagos_ibfk_1` FOREIGN KEY (`id_inmueble`) REFERENCES `inmuebles` (`id_inmueble`))
+CRITICAL - 2024-04-03 19:33:40 --> Cannot add or update a child row: a foreign key constraint fails (`alquilando`.`pagos`, CONSTRAINT `pagos_ibfk_1` FOREIGN KEY (`id_inmueble`) REFERENCES `inmuebles` (`id_inmueble`))
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `pagos` ...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `pagos` ...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `pagos` ...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1913): CodeIgniter\Database\BaseConnection->query('UPDATE `pagos` ...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(298): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\alquilando\system\BaseModel.php(865): CodeIgniter\Model->doUpdate(NULL, Array)
+#6 C:\laragon\www\alquilando\system\Model.php(651): CodeIgniter\BaseModel->update(NULL, Array)
+#7 C:\laragon\www\alquilando\app\Controllers\Pagos.php(199): CodeIgniter\Model->update(NULL, Array)
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->updatepago()
+#9 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#10 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}

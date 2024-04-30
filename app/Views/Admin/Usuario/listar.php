@@ -91,7 +91,7 @@
               <td>
                 <a class="btn btn-primary" href="<?= base_url('Usuarios/edit/' . $dato['idusuario']) ?>" role="button">Editar</a>
                 <a class="btn btn-danger eliminar" href="<?= base_url('Usuarios/eliminar/' . $dato['idusuario']) ?>" role="button">Eiminar</a>
-
+                <a class="btn btn-success nopagar" href="<?= base_url('/usuarios/pagar/' . $dato['idusuario']) ?>" role="button">Pagar</a>
               </td>
 
             </tr>

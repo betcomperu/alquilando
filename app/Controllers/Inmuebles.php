@@ -45,7 +45,7 @@ class Inmuebles extends BaseController
 
         $idusuario = session()->get('idusuario');
 
-        if ($idusuario == 1) {
+        if ($_SESSION['rol'] == 1) {
 
             // Obtener los datos de los inmuebles con los nombres de usuario asociados
              $data = [
@@ -62,6 +62,8 @@ class Inmuebles extends BaseController
             ];
 //dd($data);
             return view('/Admin/home/inmuebles', $data);
+         
+     
         } else {
             $data = [
                 'titulo' => "Listado de Inmuebles  Registrados",
@@ -74,6 +76,7 @@ class Inmuebles extends BaseController
           //   dd($data);
 
             return view('/Admin/home/inmuebles', $data);
+     
         }
     }
 
@@ -184,32 +187,48 @@ class Inmuebles extends BaseController
     }
     public function update($id_inmueble = null)
     {
-
-        $inmueble = new InmuebleModel(); // Instancio el Modelo Usuario
-        $foto_item = $inmueble->find($id_inmueble); // Llamo al registro que coincide con el id
-        // echo $foto_item['foto']; // Imprimimos para ver el campo "foto"
-
-        $old_foto = $foto_item['foto'];
-
-        if ($file = $this->request->getFile('foto')) {
-            if ($file->isValid() && !$file->hasMoved()) {
-                $imageName = $file->getRandomName();
-                $file->move('uploads/', $imageName);
-            } else {
-                $imageName = $old_foto;
-                $data = [
-                    'direccion' => $this->request->getPost('direccion'),
-                    'detalles' => $this->request->getPost('detalles'),
-                    'foto' => $imageName,
-                    'estado' => $this->request->getPost('estado'),
-                    'precio' => $this->request->getPost('precio'),
-                    'nombre_inmueble' => $this->request->getPost('nombre_inmueble'),
-                    'distrito' => $this->request->getPost('distrito')
-                ];
-                $inmueble->update($id_inmueble, $data);
-            }
-            session()->setFlashdata('editado', " El Inmueble ha sido Actualizado");
-            return redirect()->to(base_url() . '/inmuebles/listar');
+        $inmueble = new InmuebleModel(); // Instancio el Modelo Inmueble
+        $foto_item = $inmueble->find($id_inmueble); // Obtener los datos del inmueble actual
+        $old_foto = $foto_item['foto']; // Obtener el nombre de la foto actual del inmueble
+    
+        // Verificar si se subió un nuevo archivo de imagen
+        $file = $this->request->getFile('foto');
+    
+        // Verificar si se subió un archivo válido
+        if ($file && $file->isValid() && !$file->hasMoved()) {
+            // Mover el archivo de imagen a la carpeta de uploads y generar un nuevo nombre aleatorio
+            $new_image_name = $file->getRandomName();
+            $file->move('uploads/', $new_image_name);
+    
+            // Datos del inmueble con la nueva imagen
+            $data = [
+                'direccion' => $this->request->getPost('direccion'),
+                'detalles' => $this->request->getPost('detalles'),
+                'foto' => $new_image_name,
+                'estado' => $this->request->getPost('estado'),
+                'precio' => $this->request->getPost('precio'),
+                'nombre_inmueble' => $this->request->getPost('nombre_inmueble'),
+                'distrito' => $this->request->getPost('distrito')
+            ];
+        } else {
+            // Datos del inmueble sin cambiar la imagen
+            $data = [
+                'direccion' => $this->request->getPost('direccion'),
+                'detalles' => $this->request->getPost('detalles'),
+                'foto' => $old_foto, // Mantener la imagen existente
+                'estado' => $this->request->getPost('estado'),
+                'precio' => $this->request->getPost('precio'),
+                'nombre_inmueble' => $this->request->getPost('nombre_inmueble'),
+                'distrito' => $this->request->getPost('distrito')
+            ];
         }
+    
+        // Actualizar los datos del inmueble
+        $inmueble->update($id_inmueble, $data);
+    
+        // Redireccionar a la página de listado de inmuebles
+        session()->setFlashdata('editado', "El Inmueble ha sido actualizado correctamente.");
+        return redirect()->to(base_url() . '/inmuebles/listar');
     }
+    
 }

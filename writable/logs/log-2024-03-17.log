@@ -1,0 +1,255 @@
+CRITICAL - 2024-03-17 22:12:34 --> Undefined array key "nombreInquilino"
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(151): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\laragon\\www\\...', 151)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('2')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-17 22:25:23 --> Too few arguments to function App\Controllers\Pagos::generarReciboPDF(), 0 passed in C:\laragon\www\alquilando\system\CodeIgniter.php on line 823 and exactly 1 expected
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-03-17 22:49:19 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(157): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 22:49:20 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(157): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 22:49:24 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(157): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 22:49:29 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(157): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 22:49:36 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(157): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 22:49:37 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(157): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 22:49:42 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(157): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 22:50:12 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(157): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 22:51:12 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(157): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 23:10:20 --> require(fpdf/fpdf.php): Failed to open stream: No such file or directory
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(fpdf/fp...', 'C:\\laragon\\www\\...', 11)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(11): require()
+#2 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(264): include_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#4 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(788): class_exists('\\App\\Controller...', true)
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-17 23:11:06 --> require(fpdf\fpdf.php): Failed to open stream: No such file or directory
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(fpdf\\fp...', 'C:\\laragon\\www\\...', 11)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(11): require()
+#2 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(264): include_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#4 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(788): class_exists('\\App\\Controller...', true)
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-17 23:11:53 --> require(fpdf\fpdf.php): Failed to open stream: No such file or directory
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(fpdf\\fp...', 'C:\\laragon\\www\\...', 11)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(11): require()
+#2 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(264): include_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#4 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(788): class_exists('\\App\\Controller...', true)
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-17 23:13:24 --> require(fpdf\fpdf.php): Failed to open stream: No such file or directory
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(fpdf\\fp...', 'C:\\laragon\\www\\...', 11)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(11): require()
+#2 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(264): include_once('C:\\laragon\\www\\...')
+#3 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#4 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(788): class_exists('\\App\\Controller...', true)
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-17 23:13:38 --> Class "App\Libraries\BaseController" not found
+#0 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(264): include_once()
+#1 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(788): class_exists('\\App\\Controller...', true)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-03-17 23:19:37 --> Call to undefined function get_magic_quotes_runtime()
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(77): FPDF->_dochecks()
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(140): FPDF->__construct()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-03-17 23:22:07 --> Call to undefined function get_magic_quotes_runtime()
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(77): FPDF->_dochecks()
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(140): FPDF->__construct()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-03-17 23:26:54 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(156): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 23:26:56 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(156): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 23:28:36 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(156): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 23:28:37 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(156): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 23:28:42 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(156): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 23:28:53 --> Too few arguments to function App\Controllers\Pagos::generarReciboPDF(), 0 passed in C:\laragon\www\alquilando\system\CodeIgniter.php on line 823 and exactly 1 expected
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF()
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-03-17 23:29:27 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(156): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 23:29:30 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(156): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('4')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 23:29:31 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(156): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('4')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-03-17 23:29:37 --> FPDF error: Some data has already been output, can't send PDF file
+#0 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1058): FPDF->Error('Some data has a...')
+#1 C:\laragon\www\alquilando\vendor\setasign\fpdf\fpdf.php(1004): FPDF->_checkoutput()
+#2 C:\laragon\www\alquilando\app\Controllers\Pagos.php(156): FPDF->Output()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('4')
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

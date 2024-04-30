@@ -49,7 +49,7 @@ class Filters extends BaseConfig
             // 'honeypot',
             // 'secureheaders',
             'FilterAdmin' => [
-                'except' => ['Home/*', 'Home', '/','inmuebles/*','inmuebles','usuarios/*','usuarios']
+                'except' => ['Home/*', 'Home', '/','inmuebles/*','inmuebles','usuarios/*','usuarios','pagos/*','pagos','pdf','pdf/*']
             ]
         ],
         'toolbar',

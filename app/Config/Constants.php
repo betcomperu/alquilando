@@ -77,3 +77,6 @@ defined('EXIT_USER_INPUT')     || define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       || define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+define('PDF_PAGE_ORIENTATION', 'P'); // Orientación de la página (P para vertical, L para horizontal)
+define('PDF_UNIT', 'mm'); // Unidad de medida (milímetros por defecto)
+define('PDF_PAGE_FORMAT', 'A4'); // Formato de página (A4 por defecto)

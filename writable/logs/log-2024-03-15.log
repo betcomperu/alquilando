@@ -1,0 +1,33 @@
+CRITICAL - 2024-03-15 23:15:17 --> require_once(C:\laragon\www\alquilando\vendor/tecnickcom/tcpdf/tcpdf.php): Failed to open stream: No such file or directory
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:...', 'C:\\laragon\\www\\...', 145)
+#1 C:\laragon\www\alquilando\app\Controllers\Pagos.php(145): require_once()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2024-03-15 23:18:39 --> Class "App\Controllers\TCPDF" not found
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('2')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-03-15 23:20:15 --> Undefined variable $idPagos
+#0 C:\laragon\www\alquilando\app\Controllers\Pagos.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 176)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('2')
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-03-15 23:31:39 --> Class "TCPDF\TCPDF" not found
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2024-03-15 23:32:29 --> Class "TCPDF\TCPDF" not found
+#0 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->generarReciboPDF('3')
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}

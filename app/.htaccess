@@ -1,5 +1,16 @@
+<<<<<<< HEAD
+=======
+
+DirectoryIndex index.php
+
+>>>>>>> dd9804ab25a474d668bae6044bbaaf5da820f113
 RewriteEngine on
 RewriteCond $1 !^(index\.php|images|css|js|robots\.txt|favicon\.ico)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+<<<<<<< HEAD
 RewriteRule ^(.*)$ ./index.php?/$1 [L,QSA]
+=======
+#RewriteRule ^(.*)$ ./index.php?/$1 [L,QSA]
+RewriteRule ^([\s\S]*)$ index.php?/$1 [L,NC,QSA]
+>>>>>>> dd9804ab25a474d668bae6044bbaaf5da820f113

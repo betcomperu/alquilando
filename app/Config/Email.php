@@ -6,15 +6,16 @@ use CodeIgniter\Config\BaseConfig;
 
 class Email extends BaseConfig
 {
-    /**
-     * @var string
-     */
-    public $fromEmail;
 
     /**
      * @var string
      */
-    public $fromName;
+    public $fromEmail= 'albertoch@todalapc.com';
+
+    /**
+     * @var string
+     */
+    public $fromName='Alberto Chavez';
 
     /**
      * @var string
@@ -47,28 +48,28 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $SMTPHost;
+    public $SMTPHost ='mail.todalapc.com';
 
     /**
      * SMTP Username
      *
      * @var string
      */
-    public $SMTPUser;
+    public $SMTPUser = 'albetho@todalapc.com';
 
     /**
      * SMTP Password
      *
      * @var string
      */
-    public $SMTPPass;
+    public $SMTPPass = 'Bet*Per/77';
 
     /**
      * SMTP Port
      *
      * @var int
      */
-    public $SMTPPort = 25;
+    public $SMTPPort = 587;
 
     /**
      * SMTP Timeout (in seconds)
@@ -110,7 +111,7 @@ class Email extends BaseConfig
      *
      * @var string
      */
-    public $mailType = 'text';
+    public $mailType = 'html';
 
     /**
      * Character set (utf-8, iso-8859-1, etc.)
