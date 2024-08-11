@@ -41,61 +41,52 @@ class Pagos extends BaseController
 
 
     public function index()
-    {
-        $inmuebles = $this->inmuebleModel->findAll();
-        $usuarios = $this->usuarioModel->findAll();
-        $roles = $this->rolModel->findAll();
-        $pago = $this->pago->findAll();
-        $pagoModel = new PagoModel(); // Instancia del modelo de pago
+{
+    $inmuebles = $this->inmuebleModel->findAll();
+    $usuarios = $this->usuarioModel->findAll();
+    $roles = $this->rolModel->findAll();
+    $pagoModel = new PagoModel(); // Instancia del modelo de pago
 
+    // Obtener el ID del usuario actualmente autenticado
+    $userId = $this->session->get('idusuario');
 
-      
-        // Obtener el ID del usuario actualmente autenticado
-        $userId = $this->session->get('idusuario');
-      
-        // Verificar el rol del usuario actual
-        $userRol = $this->session->get('rol');
-        
-        // Si el usuario es administrador (rol 1 o 2), obtener todos los pagos
-        if ($userRol == 1 ) {
-          
-            $data = [
-                'titulo' => "Lista de Pago de Inquilinos",
-                'inmuebles' => $inmuebles,
-                'usuarios' => $usuarios,
-              'sesion_usuario' => $this->session->get('usuario'),
-                'pago'=> $this->pago->findAll()
-            ];
-          
-        } else {
-            $pago = $pagoModel->where('id_usuario', $userId)->findAll(); // Consulta para obtener los pagos del usuario
-            // Si el usuario es inquilino (rol 3), obtener solo los pagos del usuario actual
-            $data = [
-                'titulo' => "Pago del Inquilinos",
-                'inmuebles' => $inmuebles,
-                'usuarios' => $usuarios,
-             //   'sesion_usuario' => $this->session->get('usuario'),
-                'pago'=> $pago
-            ];
-            
-        }
-
-        // Pasar los datos a la vista
-        return view('/Admin/pago/index', $data);
-
-
- 
-
-        $data = [
-            'titulo' => "Lista de Pago de Inquilinos",
-            'inmuebles' => $inmuebles,
-            'usuarios' => $usuarios,
-            'pago' => $pagos,
-            'sesion_usuario' => $this->session->get('usuario')
-        ];
-
-        return view('/Admin/pago/index', $data);
+    // Verificar el rol del usuario actual
+    $userRol = $this->session->get('rol');
+    
+    // Si el usuario es administrador (rol 1), obtener todos los pagos
+    if ($userRol == 1) {
+        $pagos = $this->pago->findAll();
+    } else {
+        // Si el usuario es inquilino, obtener solo los pagos del usuario actual
+        $pagos = $pagoModel->where('id_usuario', $userId)->findAll();
     }
+
+    // Formatear las fechas de los pagos
+    $pagos = $this->formatDates($pagos);
+
+    // Preparar los datos para la vista
+    $data = [
+        'titulo' => $userRol == 1 ? "Lista de Pago de Inquilinos" : "Pago del Inquilino",
+        'inmuebles' => $inmuebles,
+        'usuarios' => $usuarios,
+        'sesion_usuario' => $this->session->get('usuario'),
+        'pago' => $pagos
+    ];
+
+    // Pasar los datos a la vista
+    return view('/Admin/pago/index', $data);
+}
+
+private function formatDates($pagos)
+{
+    foreach ($pagos as &$pago) {
+        if (isset($pago['fecha_pago'])) {
+            $pago['fecha_pago'] = date("d-m-Y", strtotime($pago['fecha_pago']));
+        }
+    }
+    return $pagos;
+}
+
 
 
     public function hacerpago()

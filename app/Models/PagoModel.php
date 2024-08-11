@@ -35,7 +35,13 @@ class PagoModel extends Model
         parent::__construct();
         $this->db = db_connect();
     }
-
+#Funcion para formatear fecha de pago
+private function formatDates($pagos) {
+    foreach ($pagos as &$pago) {
+        $pago['fecha_pago'] = date("d-m-Y", strtotime($pago['fecha_pago']));
+    }
+    return $pagos;
+}
   public function insertaPago($idpago,$detalle, $metodo_pago,$numero_operacion, $monto, $entidad_bancaria, $fecha_pago, $id_inmueble, $id_usuario, $activo){
 
     $this->insert([
@@ -54,11 +60,13 @@ class PagoModel extends Model
 }
 public function getPagos($id_usuario)
 {
-    return $this->where('id_usuario', $id_usuario)->findAll();
+    $pagos= $this->where('id_usuario', $id_usuario)->findAll();
+    return $this->formatDates($pagos);
 }
 public function Pagos()
 {
-    return $this->findAll();
+    $pagos= $this->findAll();
+    return $this->formatDates($pagos);
 }
 public function updatePago($id, $data)
 {

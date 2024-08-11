@@ -110,59 +110,61 @@
               <td>
                 <?php
                 $estado = $p['activo'];
+                $mensajeEstado = '';
                 switch ($estado) {
                   case '1':
-                    //  echo '<p class="text-green">'.$valrol.'</p>';
-                    echo '<p class="text-success"><b>' . "Pagado" . '</b></p>';
+                    echo '<p class="text-success"><b>Pagado</b></p>';
+                    $mensajeEstado = 'pagado';
                     break;
 
                   default:
-                    echo '<p class="text-danger"><b>' . "Pendiente" . '</b></p>';
+                    echo '<p class="text-danger"><b>Pendiente</b></p>';
+                    $mensajeEstado = 'pendiente';
                     break;
                 }
                 ?>
               </td>
+              <!-- Inicializa los tooltips -->
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
               <td>
 
-              <?php if ($_SESSION['rol'] == 1) : ?>
-  <a class="btn btn-primary" href="<?= base_url('pagos/editarReciboPDF/' . $p['idpagos']) ?>" role="button">
-    <i class="fas fa-edit"></i></a>
-  <a class="btn btn-danger eliminar" href="<?= base_url('pagos/delete/' . $p['idpagos']) ?>" role="button">
-    <i class="fas fa-trash"></i></a>
-  <a class="btn btn-warning" href="<?= base_url('pagos/muestraReciboPDF/' . $p['idpagos']) ?>" role="button">
-    <i class="fas fa-file-pdf"></i></a>
-  <a class="btn btn-success" href="<?= base_url('pagos/enviarMensaje/' . $p['idpagos']) ?>" role="button">
-    <i class="fas fa-envelope"></i></a>
-    
-   
-    <button class="btn btn-info" onclick="mostrarVentanaModal(
-    '<?php echo $nombreInquilino; ?>', // nombreinquilino
-    '<?php echo $nombreInmueble; ?>', // nombreinmueble
-    '<?php echo $p['numero_operacion']; ?>', // numero_operacion
-    '<?php echo $p['monto']; ?>', // monto
-    '<?php echo $p['entidad_bancaria']; ?>', // entidad_bancaria
-    '<?php echo $p['fecha_pago']; ?>', // fecha_pago
-    '<?php echo $p['fecha_pago']; ?>' // detalle
-)">
+                <?php if ($_SESSION['rol'] == 1) : ?>
+                  <!-- Botones con tooltips -->
+<a class="btn btn-primary" href="<?= base_url('pagos/editarReciboPDF/' . $p['idpagos']) ?>" role="button" data-toggle="tooltip" title="Editar Recibo">
+    <i class="fas fa-edit"></i>
+</a>
+<a class="btn btn-danger eliminar" href="<?= base_url('pagos/delete/' . $p['idpagos']) ?>" role="button" data-toggle="tooltip" title="Eliminar Recibo">
+    <i class="fas fa-trash"></i>
+</a>
+<a class="btn btn-warning" href="<?= base_url('pagos/muestraReciboPDF/' . $p['idpagos']) ?>" role="button" data-toggle="tooltip" title="Gemerar Recibo PDF">
+    <i class="fas fa-file-pdf"></i>
+</a>
+<a class="btn btn-success" href="<?= base_url('pagos/enviarMensaje/' . $p['idpagos']) ?>" role="button" data-toggle="tooltip" title="Enviar Correo">
+    <i class="fas  fa-envelope"></i>
+</a>
+<button class="btn btn-primary" onclick="mostrarVentanaModal('<?= esc($nombreInquilino) ?>', '<?= esc($nombreInmueble) ?>', '<?= esc($p['numero_operacion']) ?>', '<?= esc($p['monto']) ?>', '<?= esc($p['entidad_bancaria']) ?>', '<?= esc($p['fecha_pago']) ?>', '<?= esc($p['detalle']) ?>', '<?= $mensajeEstado ?>')" data-toggle="tooltip" title="Enviar Msj Whatsapp">
     <i class="fas fa-comment"></i>
 </button>
 
 
+                  <?php
+                  // Determinar la clase CSS del botón según el estado activo del pago
+                  $claseBoton = ($p['activo'] == 0) ? 'btn-info' : 'btn-danger';
 
-  <?php
-  // Determinar la clase CSS del botón según el estado activo del pago
-  $claseBoton = ($p['activo'] == 0) ? 'btn-info' : 'btn-danger';
-
-  // Determinar el icono del botón según el estado activo del pago
-  $iconoBoton = ($p['activo'] == 0) ? 'check' : 'clock';
-  ?>
-  <a class="btn <?= $claseBoton ?>" href="<?= base_url('pagos/validarpago/' . $p['idpagos']) ?>" role="button">
-    <i class="fas fa-<?= $iconoBoton ?>"></i>
-  </a>
-<?php else: ?>
-  <a class="btn btn-warning" href="<?= base_url('pagos/muestraReciboPDF/' . $p['idpagos']) ?>" role="button">
-    <i class="fas fa-file-pdf"></i> PDF</a>
-<?php endif; ?>
+                  // Determinar el icono del botón según el estado activo del pago
+                  $iconoBoton = ($p['activo'] == 0) ? 'check' : 'clock';
+                  ?>
+                  <a class="btn <?= $claseBoton ?>" href="<?= base_url('pagos/validarpago/' . $p['idpagos']) ?>" role="button">
+                    <i class="fas fa-check >?= $iconoBoton ?>"></i>
+                  </a>
+                <?php else : ?>
+                  <a class="btn btn-warning" href="<?= base_url('pagos/muestraReciboPDF/' . $p['idpagos']) ?>" role="button">
+                    <i class="fas fa-file-pdf"></i> PDF</a>
+                <?php endif; ?>
               </td>
             </tr>
           <?php endforeach; ?>
