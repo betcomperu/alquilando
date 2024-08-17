@@ -1,0 +1,33 @@
+__ci_last_regenerate|i:1723839489;_ci_previous_url|s:36:"http://alquilando.com/usuarios/pagos";idusuario|s:1:"1";nombre|s:15:"Alberto Chávez";correo|s:19:"albetho@hotmail.com";rol|s:1:"1";foto|s:35:"1672888970_100c5382a81c184126ac.jpg";isLoggedIn|b:1;error|s:1284:"Hubo un problema al enviar el correo:220-cp.privatedns.in ESMTP Exim 4.96 #2 Fri, 16 Aug 2024 22:13:07 +0200 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+<br /><pre>hello: 250-cp.privatedns.in Hello alquilando.com [181.66.176.50]
+250-SIZE 52428800
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-STARTTLS
+250 HELP
+</pre><pre>starttls: 220 TLS go ahead
+</pre><pre>hello: 250-cp.privatedns.in Hello alquilando.com [181.66.176.50]
+250-SIZE 52428800
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+</pre>Ha fallado la autentificación de la contraseña. Error: 535 Incorrect authentication data
+<br />Incapaz de enviar email usando PHP SMTP. Su servidor puede no estar configurado para enviar correos usando este método.<br /><pre>Date: Fri, 16 Aug 2024 15:13:03 -0500
+To: wilmerortega@gmail.com
+Subject: =?UTF-8?Q?Gracias=20por=20tu=20pago?=
+From: &quot;Alberto Chavez&quot; &lt;albertoch@todalapc.com&gt;
+Return-Path: &lt;albertoch@todalapc.com&gt;
+Reply-To: &lt;albertoch@todalapc.com&gt;
+User-Agent: CodeIgniter
+X-Sender: albertoch@todalapc.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;66bfb2cf3997c7.45856530@todalapc.com&gt;
+Mime-Version: 1.0
+
+</pre>";__ci_vars|a:1:{s:5:"error";s:3:"old";}

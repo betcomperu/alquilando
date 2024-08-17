@@ -26,15 +26,25 @@
     </div><!-- /.container-fluid -->
   </div>
   <div class="swal" data-swal="<?= session()->get('registrado') ?>"></div>
-  <?php if (session()->getFlashdata('error')) : ?>
-    <div class="alert alert-danger">
-      <?= session()->getFlashdata('error') ?>
+  <?php if (session()->getFlashdata('success')): ?>
+    <div class="alert alert-success">
+        <?= session()->getFlashdata('success') ?>
     </div>
-  <?php endif; ?>
+<?php endif; ?>
+
+<?php if (session()->getFlashdata('error')): ?>
+    <div class="alert alert-danger">
+        <?= session()->getFlashdata('error') ?>
+    </div>
+<?php endif; ?>
 
 
 
   <div class="card-body">
+
+  <div class="total-montos">
+            Total: S/ <?php echo number_format($totalMontos, 2); ?>
+        </div>
     <?php if ($_SESSION['rol'] == 1) : ?>
       <div class="box-header with-border">
         <a href="<?php echo base_url(); ?>/usuarios/hacerpago" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Añadir Pago</a>
@@ -143,12 +153,14 @@
 <a class="btn btn-warning" href="<?= base_url('pagos/muestraReciboPDF/' . $p['idpagos']) ?>" role="button" data-toggle="tooltip" title="Gemerar Recibo PDF">
     <i class="fas fa-file-pdf"></i>
 </a>
-<a class="btn btn-success" href="<?= base_url('pagos/enviarMensaje/' . $p['idpagos']) ?>" role="button" data-toggle="tooltip" title="Enviar Correo">
+<a class="btn btn-success" href="<?= base_url('pagos/enviarConfirmacion/' . $p['idpagos']) ?>" role="button" data-toggle="tooltip" title="Enviar Correo">
     <i class="fas  fa-envelope"></i>
 </a>
 <button class="btn btn-primary" onclick="mostrarVentanaModal('<?= esc($nombreInquilino) ?>', '<?= esc($nombreInmueble) ?>', '<?= esc($p['numero_operacion']) ?>', '<?= esc($p['monto']) ?>', '<?= esc($p['entidad_bancaria']) ?>', '<?= esc($p['fecha_pago']) ?>', '<?= esc($p['detalle']) ?>', '<?= $mensajeEstado ?>')" data-toggle="tooltip" title="Enviar Msj Whatsapp">
     <i class="fas fa-comment"></i>
 </button>
+
+
 
 
                   <?php

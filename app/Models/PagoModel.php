@@ -100,7 +100,7 @@ public function obtenerPagoPorId($idpagos)
 {
     // Obtener el pago y la información del usuario
      $pago = $this->db->table('pagos')
-        ->select('pagos.*, usuario.nombre')
+        ->select('pagos.*, usuario.nombre, usuario.correo')
         ->join('usuario', 'pagos.id_usuario = usuario.idusuario')
         ->where('pagos.idpagos', $idpagos)
         ->get()
@@ -120,6 +120,11 @@ public function obtenerInmueblePorId($idpagos)
         ->getRowArray();
 
     return $inmueble;
+}
+
+public function getTotalMontos()
+{
+    return $this->selectSum('monto')->where('activo', 1)->get()->getRow()->monto;
 }
 
 }

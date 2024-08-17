@@ -59,6 +59,7 @@ class Pagos extends BaseController
     } else {
         // Si el usuario es inquilino, obtener solo los pagos del usuario actual
         $pagos = $pagoModel->where('id_usuario', $userId)->findAll();
+        
     }
 
     // Formatear las fechas de los pagos
@@ -70,7 +71,8 @@ class Pagos extends BaseController
         'inmuebles' => $inmuebles,
         'usuarios' => $usuarios,
         'sesion_usuario' => $this->session->get('usuario'),
-        'pago' => $pagos
+        'pago' => $pagos,
+        'totalMontos' => $pagoModel->getTotalMontos() // Aquí obtenemos la suma de los montos
     ];
 
     // Pasar los datos a la vista
@@ -446,4 +448,41 @@ private function formatDates($pagos)
             echo 'Error al enviar el correo electrónico de confirmación de pago';
         }
     }
+
+    public function enviarConfirmacion($idPago)
+{
+    // Obtener los detalles del pago
+    $pago = $this->pago->find($idPago);
+    $nombre= $this->pago->obtenerNombrePorId($idPago);
+
+    //dd($nombre);
+
+    if ($nombre) {
+        // Configurar el correo
+        $email = \Config\Services::email();
+
+        // Definir el mensaje en función del estado del pago
+        if ($nombre['activo'] == 1) {
+            $subject = 'Gracias por tu pago';
+            $message = 'Estimado ' . $nombre['nombre'] . ', gracias por efectuar tu pago correspondiente.';
+        } else {
+            $subject = 'Recordatorio de Pago Pendiente';
+            $message = 'Estimado ' . $nombre['nombre'] . ', te recordamos que tienes un pago pendiente.';
+        }
+
+        $email->setTo($nombre['correo']);
+        $email->setSubject($subject);
+        $email->setMessage($message);
+
+        if ($email->send()) {
+            return redirect()->back()->with('success', 'Correo enviado correctamente!.');
+        } else {
+           // $error= $email->printDebugger(['headers']);
+           // return redirect()->back()->with('error', 'Hubo un problema al enviar el correo:' . $error);
+            return redirect()->back()->with('error', 'Hubo un problema al enviar el correo.');
+        }
+    } else {
+        return redirect()->back()->with('error', 'Pago no encontrado.');
+    }
+}
 }

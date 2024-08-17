@@ -24,3 +24,10 @@
 .btn {
     /* Estilos para los botones */
 }
+
+
+.total-montos {
+    text-align: right;
+    font-size: 2rem;
+    font-weight: bold;
+}

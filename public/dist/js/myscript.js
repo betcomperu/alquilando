@@ -9,7 +9,7 @@ function mostrarVentanaModal(nombreInquilino, nombreInmueble, numero_operacion, 
     } else {
         mensaje = "👋🏼¡Hola! " + nombreInquilino +
             "🌟\n 🗓️ No olvides realizar el pago de alquiler 🏠 de: " + nombreInmueble +
-            "\n ⏱️ con fecha de vencimiento: " + fecha_pago +"\n 👉🏼"+ detalle + "Cuyo monto es: S/" + monto + ". 💶\n" +
+            "\n ⏱️ con fecha de vencimiento: " + fecha_pago +"\n 👉🏼"+ detalle + " .Cuyo monto es: S/" + monto + ". 💶\n" +
             "✨ ¡Agradezco mucho tu puntualidad!.🫂\n Saludos cordiales 🤝🏻";
     }
 
