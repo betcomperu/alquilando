@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\InmuebleModel;
+use App\Models\PagoModel;
 use App\Models\UsuarioModel;
 use App\Models\RolModel;
 use Config\Services\session;
@@ -16,8 +17,24 @@ class Home extends BaseController
     $inmueble = new InmuebleModel();
     $usuario = new UsuarioModel();
     $rol = new RolModel();
+    $pago = new PagoModel();
     $session = session();
     $userRol = $session->get('rol');
+    // Obtener el ID del usuario logueado (inquilino)
+    $inquilinoId = session()->get('idusuario');
+    $montoTotalInquilino = $pago->selectSum('monto')
+    ->where('id_usuario', $inquilinoId)
+    ->where('activo', 1)
+    ->get()
+    ->getRow();
+    // Agregar la consulta para obtener los pagos pendientes del inquilino
+    $ppendientes = $pago->select('*')
+        ->where('id_usuario', $inquilinoId)
+        ->where('activo', 0)
+        ->countAllResults();
+    // Verificar si el resultado es nulo y asignar el monto total
+$TotalInquilino = ($montoTotalInquilino && $montoTotalInquilino->monto) ? $montoTotalInquilino->monto : 0;// Sumar el monto total de los pagos
+ 
 
     $data = [
       'titulo' => "Listado de Inmuebles",
@@ -30,23 +47,32 @@ class Home extends BaseController
         ->where('rol', 3)
         ->where('condicion', 1)
         ->countAllResults(),
+        
 
-      'ninmuebles' => $inmueble->select('*')->where('idusuario', $idusuario)->countAllResults(),
+      'pendientes' => $pago->select('*')->where('activo', 0)->countAllResults(),
+      'ppendientes' => $ppendientes, // Nueva variable para pagos pendientes del inquilino
+      'pagoTotal' => $pago->getTotalMontos(),
+      'montoTotalInquilino' => $TotalInquilino,
+
+      'ninmuebles' => $inmueble->select('*')
+            ->where('idusuario', $inquilinoId)
+            ->countAllResults(),
       'cantidadinmo' => $inmueble->select('*')->where('condicion', 1)->countAllResults(),
       'cantidadusuarios' => $usuario->select('*')->where('condicion', 1)->countAllResults(),
       'userRol'=>$userRol
     ];
-    //dd($userRol);
+   // dd($data);
  
-    if ($_SESSION['rol']==1) {
-      return view('/Admin/Home/index', $data);
-      return view('/Admin/Layout/aside', $data);
-    }
-   
-    if ($_SESSION['rol'] ==3) {
-      return view('/Admin/Home/index_user', $data);
-      return view('/Admin/Usuario/aside', $data);
-    }
+    if ($_SESSION['rol'] == 1) {
+      return view('/Admin/Layout/aside', $data)
+           . view('/Admin/Home/index', $data);
+  }
+  
+  if ($_SESSION['rol'] == 3) {
+      return view('/Admin/Usuario/aside', $data)
+           . view('/Admin/Home/index_user', $data);
+  }
+  
   }
 
   public function get_gold_prices()

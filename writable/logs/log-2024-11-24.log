@@ -1,0 +1,14 @@
+CRITICAL - 2024-11-24 19:58:12 --> Creation of dynamic property App\Controllers\Login::$session is deprecated
+#0 C:\laragon\www\alquilando\app\Controllers\Login.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dyn...', 'C:\\laragon\\www\\...', 17)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(800): App\Controllers\Login->__construct()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-11-24 19:58:19 --> Creation of dynamic property App\Controllers\Login::$session is deprecated
+#0 C:\laragon\www\alquilando\app\Controllers\Login.php(17): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dyn...', 'C:\\laragon\\www\\...', 17)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(800): App\Controllers\Login->__construct()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(401): CodeIgniter\CodeIgniter->createController()
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

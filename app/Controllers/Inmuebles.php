@@ -39,46 +39,45 @@ class Inmuebles extends BaseController
     }
     public function listar()
     {
-        //
         $inmueble = new InmuebleModel();
         $usuario = new UsuarioModel();
-
+    
         $idusuario = session()->get('idusuario');
-
+    
         if ($_SESSION['rol'] == 1) {
-
-            // Obtener los datos de los inmuebles con los nombres de usuario asociados
-             $data = [
-                'titulo' => "Listado de Inmuebles",
-          //      'inmuebles' => $inmueble->select('*')->where('condicion',1)->findAll(),
-          'inmuebles'=>$inmueble->select('inmuebles.*, usuario.nombre')
-        ->join('usuario', 'usuario.idusuario = inmuebles.idusuario')
-        ->where('inmuebles.condicion', 1)
-        ->findAll(),
-             //   'cantidadinmo' => $inmueble->select('*')->where('condicion',1)->countAllResults(),
-                'cantidadusuarios'=>$usuario->select('*')->where('condicion', 1)->countAllResults(),
-                'usuarioregistrante'=>$inmueble->join('usuario', 'usuario.idusuario = inmuebles.idusuario')
-                ->findAll()
-            ];
-//dd($data);
-            return view('/Admin/home/inmuebles', $data);
-         
-     
-        } else {
+            // Administrador: Mostrar todos los inmuebles con los nombres de usuario asociados
             $data = [
-                'titulo' => "Listado de Inmuebles  Registrados",
-                'inmuebles' => $inmueble->select('inmuebles.*, usuario.nombre')->join('usuario', 'usuario.idusuario = inmuebles.idusuario')
-                ->where('usuario.idusuario', $idusuario)
-                ->findAll(),
-             //   'cantidadinmo' => $inmueble->select('*')->countAllResults(),
-              // 'cantidadusuarios'=>$usuario->select('*')->where('condicion', 1)->countAllResults()
+                'titulo' => "Listado de Inmuebles",
+                'inmuebles' => $inmueble->select('inmuebles.*, usuario.nombre')
+                                        ->join('usuario', 'usuario.idusuario = inmuebles.idusuario')
+                                        ->where('inmuebles.condicion', 1)
+                                        ->findAll(),
+                'cantidadusuarios' => $usuario->where('condicion', 1)->countAllResults(),
+                'usuarioregistrante' => $inmueble->select('usuario.nombre')
+                                                  ->join('usuario', 'usuario.idusuario = inmuebles.idusuario')
+                                                  ->findAll()
             ];
-          //   dd($data);
-
             return view('/Admin/home/inmuebles', $data);
-     
+    
+        } elseif ($_SESSION['rol'] == 3) {
+            // Usuario: Mostrar solo los inmuebles registrados por el usuario logueado
+            $data = [
+                'titulo' => "Listado de Inmuebles Registrados",
+                'inmuebles' => $inmueble->select('inmuebles.*, usuario.nombre')
+                                        ->join('usuario', 'usuario.idusuario = inmuebles.idusuario')
+                                        ->where('usuario.idusuario', $idusuario)
+                                        ->where('inmuebles.condicion', 1)
+                                        ->findAll()
+            ];
+
+         //   dd($data);
+            return view('/Admin/home/inmuebles', $data);
         }
+    
+        // Redirigir o manejar casos en los que no se cumplan las condiciones anteriores
+        return redirect()->to('/home');
     }
+    
 
     public function registro()
     {

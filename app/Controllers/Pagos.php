@@ -2,20 +2,13 @@
 
 namespace App\Controllers;
 
-
-
 use App\Controllers\BaseController;
 use App\Models\PagoModel;
 use App\Models\InmuebleModel;
 use App\Models\UsuarioModel;
 use Config\Services\session;
-
 use App\ThirdParty\fpdf\FPDF;
 use CodeIgniter\Email\Email;
-
-
-
-
 
 class Pagos extends BaseController
 {
@@ -41,53 +34,63 @@ class Pagos extends BaseController
 
 
     public function index()
-{
-    $inmuebles = $this->inmuebleModel->findAll();
-    $usuarios = $this->usuarioModel->findAll();
-    $roles = $this->rolModel->findAll();
-    $pagoModel = new PagoModel(); // Instancia del modelo de pago
+    {
+        $inmuebles = $this->inmuebleModel->findAll();
+        $usuarios = $this->usuarioModel->findAll();
+        $roles = $this->rolModel->findAll();
+        $pagoModel = new PagoModel(); // Instancia del modelo de pago
 
-    // Obtener el ID del usuario actualmente autenticado
-    $userId = $this->session->get('idusuario');
+        // Obtener el ID del usuario actualmente autenticado
+        $userId = $this->session->get('idusuario');
 
-    // Verificar el rol del usuario actual
-    $userRol = $this->session->get('rol');
-    
-    // Si el usuario es administrador (rol 1), obtener todos los pagos
-    if ($userRol == 1) {
-        $pagos = $this->pago->findAll();
-    } else {
-        // Si el usuario es inquilino, obtener solo los pagos del usuario actual
-        $pagos = $pagoModel->where('id_usuario', $userId)->findAll();
-        
-    }
+        // Verificar el rol del usuario actual
+        $userRol = $this->session->get('rol');
 
-    // Formatear las fechas de los pagos
-    $pagos = $this->formatDates($pagos);
-
-    // Preparar los datos para la vista
-    $data = [
-        'titulo' => $userRol == 1 ? "Lista de Pago de Inquilinos" : "Pago del Inquilino",
-        'inmuebles' => $inmuebles,
-        'usuarios' => $usuarios,
-        'sesion_usuario' => $this->session->get('usuario'),
-        'pago' => $pagos,
-        'totalMontos' => $pagoModel->getTotalMontos() // Aquí obtenemos la suma de los montos
-    ];
-
-    // Pasar los datos a la vista
-    return view('/Admin/pago/index', $data);
-}
-
-private function formatDates($pagos)
-{
-    foreach ($pagos as &$pago) {
-        if (isset($pago['fecha_pago'])) {
-            $pago['fecha_pago'] = date("d-m-Y", strtotime($pago['fecha_pago']));
+        // Si el usuario es administrador (rol 1), obtener todos los pagos y el monto total
+        if ($userRol == 1) {
+            $pagos = $pagoModel->findAll();
+            $montoTotal = $pagoModel->selectSum('monto')->where('activo', 1)->get()->getRow()->monto; // Obtener el monto total para el administrador
+        } else {
+            // Si el usuario es inquilino, obtener solo los pagos del usuario actual y su monto total
+            $pagos = $pagoModel->where('id_usuario', $userId)->findAll();
+            $montoTotal = $pagoModel->selectSum('monto')
+                ->where('id_usuario', $userId)
+                ->where('activo', 1)
+                ->get()
+                ->getRow()
+                ->monto; // Obtener el monto total para el inquilino
         }
+
+        // Asegurarse de que el monto sea un valor numérico válido
+        $montoTotal = is_numeric($montoTotal) ? (float)$montoTotal : 0.0;
+
+        // Formatear las fechas de los pagos
+        $pagos = $this->formatDates($pagos);
+
+        // Preparar los datos para la vista
+        $data = [
+            'titulo' => $userRol == 1 ? "Lista de Pago de Inquilinos" : "Pago del Inquilino",
+            'inmuebles' => $inmuebles,
+            'usuarios' => $usuarios,
+            'sesion_usuario' => $this->session->get('usuario'),
+            'pago' => $pagos,
+            'pagoTotal' => number_format($montoTotal, 2) // Formatear el monto total para mostrarlo con 2 decimales
+        ];
+
+        // Pasar los datos a la vista
+        return view('/Admin/pago/index', $data);
     }
-    return $pagos;
-}
+
+
+    private function formatDates($pagos)
+    {
+        foreach ($pagos as &$pago) {
+            if (isset($pago['fecha_pago'])) {
+                $pago['fecha_pago'] = date("d-m-Y", strtotime($pago['fecha_pago']));
+            }
+        }
+        return $pagos;
+    }
 
 
 
@@ -450,39 +453,39 @@ private function formatDates($pagos)
     }
 
     public function enviarConfirmacion($idPago)
-{
-    // Obtener los detalles del pago
-    $pago = $this->pago->find($idPago);
-    $nombre= $this->pago->obtenerNombrePorId($idPago);
+    {
+        // Obtener los detalles del pago
+        $pago = $this->pago->find($idPago);
+        $nombre = $this->pago->obtenerNombrePorId($idPago);
 
-    //dd($nombre);
+        //dd($nombre);
 
-    if ($nombre) {
-        // Configurar el correo
-        $email = \Config\Services::email();
+        if ($nombre) {
+            // Configurar el correo
+            $email = \Config\Services::email();
 
-        // Definir el mensaje en función del estado del pago
-        if ($nombre['activo'] == 1) {
-            $subject = 'Gracias por tu pago';
-            $message = 'Estimado ' . $nombre['nombre'] . ', gracias por efectuar tu pago correspondiente.';
+            // Definir el mensaje en función del estado del pago
+            if ($nombre['activo'] == 1) {
+                $subject = 'Gracias por tu pago';
+                $message = 'Estimado ' . $nombre['nombre'] . ', gracias por efectuar tu pago correspondiente.';
+            } else {
+                $subject = 'Recordatorio de Pago Pendiente';
+                $message = 'Estimado ' . $nombre['nombre'] . ', te recordamos que tienes un pago pendiente.';
+            }
+
+            $email->setTo($nombre['correo']);
+            $email->setSubject($subject);
+            $email->setMessage($message);
+
+            if ($email->send()) {
+                return redirect()->back()->with('success', 'Correo enviado correctamente!.');
+            } else {
+                // $error= $email->printDebugger(['headers']);
+                // return redirect()->back()->with('error', 'Hubo un problema al enviar el correo:' . $error);
+                return redirect()->back()->with('error', 'Hubo un problema al enviar el correo.');
+            }
         } else {
-            $subject = 'Recordatorio de Pago Pendiente';
-            $message = 'Estimado ' . $nombre['nombre'] . ', te recordamos que tienes un pago pendiente.';
+            return redirect()->back()->with('error', 'Pago no encontrado.');
         }
-
-        $email->setTo($nombre['correo']);
-        $email->setSubject($subject);
-        $email->setMessage($message);
-
-        if ($email->send()) {
-            return redirect()->back()->with('success', 'Correo enviado correctamente!.');
-        } else {
-           // $error= $email->printDebugger(['headers']);
-           // return redirect()->back()->with('error', 'Hubo un problema al enviar el correo:' . $error);
-            return redirect()->back()->with('error', 'Hubo un problema al enviar el correo.');
-        }
-    } else {
-        return redirect()->back()->with('error', 'Pago no encontrado.');
     }
-}
 }

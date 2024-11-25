@@ -43,7 +43,7 @@
   <div class="card-body">
 
   <div class="total-montos">
-            Total: S/ <?php echo number_format($totalMontos, 2); ?>
+            Total: S/ <?php echo $pagoTotal; ?>
         </div>
     <?php if ($_SESSION['rol'] == 1) : ?>
       <div class="box-header with-border">

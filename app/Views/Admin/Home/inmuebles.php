@@ -16,7 +16,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1 class="m-0"><?php echo $titulo; ?>***</h1>
+          <h1 class="m-0"><?php echo $titulo; ?></h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
@@ -58,7 +58,9 @@
                                 <th>Nombre Inmueble</th>
                                 <th>Distrito</th>
                                 <th>Usuario Registrante</th>
-                                <th>Opciones</th>
+                                <?php if (session()->get('idusuario') == 1) : // Mostrar solo si es administrador ?>
+            <th>Opciones</th>
+        <?php endif; ?>
 
                             </tr>
                         </thead>
@@ -87,11 +89,13 @@
         <?php echo $dato['nombre']; ?>
 
               </td>
-             
+              
+                           
                                     <td>
-                                        <a class="btn btn-primary" href="<?= base_url('Inmuebles/edit/' . $dato['id_inmueble']) ?>" role="button"><i class="fa fa-keyboard"></i></a>
-                                        <a class="btn btn-danger eliminar" href="<?= base_url('Inmuebles/eliminar/' . $dato['id_inmueble'] )?>" role="button"><i class="fa fa-trash"></i></a>
-
+                                    <?php if (session()->get('idusuario') == 1) : // Solo para el administrador ?>
+                <a class="btn btn-primary" href="<?= base_url('Inmuebles/edit/' . $dato['id_inmueble']) ?>" role="button"><i class="fa fa-keyboard"></i></a>
+                <a class="btn btn-danger eliminar" href="<?= base_url('Inmuebles/eliminar/' . $dato['id_inmueble']) ?>" role="button"><i class="fa fa-trash"></i></a>
+            <?php endif; ?>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>
@@ -106,7 +110,9 @@
                                 <th>Nombre Inmueble</th>
                                 <th>Distrito/</th>
                              <th>Usuario Registrante</th>
-                                <th>Opciones</th>
+                             <?php if (session()->get('idusuario') == 1) : // Mostrar solo si es administrador ?>
+            <th>Opciones</th>
+        <?php endif; ?>
                             </tr>
                         </tfoot>
                     </table>

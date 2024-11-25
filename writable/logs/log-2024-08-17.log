@@ -1,0 +1,199 @@
+CRITICAL - 2024-08-17 10:30:33 --> syntax error, unexpected token ";", expecting "]"
+#0 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#1 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(788): class_exists('\\App\\Controller...', true)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-08-17 10:53:36 --> Undefined variable $totalMontos
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\index.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 53)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Home/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Home.php(47): view('/Admin/Home/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-17 10:53:57 --> Undefined variable $totalPagos
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\index.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 53)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Home/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Home.php(47): view('/Admin/Home/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-17 10:54:07 --> Undefined variable $totalPago
+#0 C:\laragon\www\alquilando\app\Views\Admin\Home\index.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 53)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Home/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Home.php(47): view('/Admin/Home/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2024-08-17 12:30:57 --> Unknown column 'idusuario' in 'where clause'
+CRITICAL - 2024-08-17 12:30:57 --> Unknown column 'idusuario' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(`mon...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`mon...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`mon...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`mon...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\app\Controllers\Home.php(28): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-08-17 12:32:21 --> Unknown column 'idusuario' in 'where clause'
+CRITICAL - 2024-08-17 12:32:21 --> Unknown column 'idusuario' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(`mon...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`mon...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`mon...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`mon...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\app\Controllers\Home.php(28): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-08-17 12:34:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '22'' at line 3
+CRITICAL - 2024-08-17 12:34:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= '22'' at line 3
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(`mon...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`mon...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`mon...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`mon...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\app\Controllers\Home.php(28): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-08-17 12:37:40 --> Unknown column 'idusuario' in 'where clause'
+CRITICAL - 2024-08-17 12:37:40 --> Unknown column 'idusuario' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(`mon...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`mon...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`mon...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`mon...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\app\Controllers\Home.php(27): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2024-08-17 12:37:56 --> Unknown column 'idusuario' in 'where clause'
+CRITICAL - 2024-08-17 12:37:56 --> Unknown column 'idusuario' in 'where clause'
+#0 C:\laragon\www\alquilando\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SUM(`mon...', 0)
+#1 C:\laragon\www\alquilando\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`mon...')
+#2 C:\laragon\www\alquilando\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`mon...')
+#3 C:\laragon\www\alquilando\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`mon...', Array, false)
+#4 C:\laragon\www\alquilando\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\alquilando\app\Controllers\Home.php(27): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-08-17 12:46:06 --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'number_format()...', 'C:\\laragon\\www\\...', 40)
+#1 C:\laragon\www\alquilando\app\Views\Admin\Home\index_user.php(40): number_format(NULL, 2)
+#2 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#3 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/Home/ind...', Array, true)
+#5 C:\laragon\www\alquilando\app\Controllers\Home.php(63): view('/Admin/Home/ind...', Array)
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-08-17 12:52:01 --> Attempt to read property "monto" on string
+#0 C:\laragon\www\alquilando\app\Controllers\Home.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\laragon\\www\\...', 32)
+#1 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Home->index()
+#2 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2024-08-17 12:53:18 --> syntax error, unexpected variable "$TotalInquilino"
+#0 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#1 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(788): class_exists('\\App\\Controller...', true)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-08-17 12:53:19 --> syntax error, unexpected variable "$TotalInquilino"
+#0 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\...')
+#1 C:\laragon\www\alquilando\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\laragon\www\alquilando\system\CodeIgniter.php(788): class_exists('\\App\\Controller...', true)
+#4 C:\laragon\www\alquilando\system\CodeIgniter.php(397): CodeIgniter\CodeIgniter->startController()
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2024-08-17 23:41:53 --> number_format(): Argument #1 ($num) must be of type float, string given
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\index.php(46): number_format('7,000.00', 2)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(87): view('/Admin/pago/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-17 23:43:28 --> number_format(): Argument #1 ($num) must be of type float, string given
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\index.php(46): number_format('7,000.00', 2)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(87): view('/Admin/pago/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-17 23:46:32 --> Undefined variable $totalMontos
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\index.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\laragon\\www\\...', 46)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(87): view('/Admin/pago/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-17 23:47:50 --> number_format(): Argument #1 ($num) must be of type float, string given
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\index.php(46): number_format('7,000.00', 2)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(87): view('/Admin/pago/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-08-17 23:47:51 --> number_format(): Argument #1 ($num) must be of type float, string given
+#0 C:\laragon\www\alquilando\app\Views\Admin\Pago\index.php(46): number_format('7,000.00', 2)
+#1 C:\laragon\www\alquilando\system\View\View.php(210): include('C:\\laragon\\www\\...')
+#2 C:\laragon\www\alquilando\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\laragon\www\alquilando\system\Common.php(1094): CodeIgniter\View\View->render('/Admin/pago/ind...', Array, true)
+#4 C:\laragon\www\alquilando\app\Controllers\Pagos.php(87): view('/Admin/pago/ind...', Array)
+#5 C:\laragon\www\alquilando\system\CodeIgniter.php(823): App\Controllers\Pagos->index()
+#6 C:\laragon\www\alquilando\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pagos))
+#7 C:\laragon\www\alquilando\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\alquilando\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
